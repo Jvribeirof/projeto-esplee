@@ -27,52 +27,8 @@ body, html{
 }
 
 header{
-    background: var(--dark0-color) url(imagens/background/bg-main.jpg) center center no-repeat;
-    background-size: cover;
-    color: var(--light0-color);
-    width: 100%;
+    background-image: url('../imagens/background/bg-main-g.jpg');
 }
-
-    #header-content{
-        max-width: 1200px;
-        padding: 0px 48px;
-        margin: auto;
-    }
-
-    nav{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        padding-top: 48px;
-        margin-bottom: 96px;
-    }
-        #nav-logo{
-            width: 48px;
-            position: relative;
-        }
-        #nav-logo:hover{
-            transition: .25s;
-            transform: scale(1.05);
-        }
-        #nav-links{
-            display: flex;
-            gap: 40px;
-
-            position: relative;
-        }
-            #nav-links > a{
-                text-decoration: none;
-                color: var(--light-1-color);
-                font-weight: 600;
-
-                position: relative;
-            }
-                #nav-links > a:hover{
-                    transition: .2s;
-                    color: var(--light1-color);
-                    transform: scale(1.05);
-                }
     #header-headings{
         max-width: 700px;
         margin-bottom: 96px;
