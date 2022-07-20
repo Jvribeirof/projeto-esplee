@@ -33,25 +33,80 @@ header{
     width: 100%;
 }
 
-#header-content{
-    max-width: 1200px;
-    margin: auto;
-}
+    #header-content{
+        max-width: 1200px;
+        padding: 0px 48px;
+        margin: auto;
+    }
 
     nav{
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        padding-top: 48px;
+        margin-bottom: 96px;
     }
         #nav-logo{
             width: 48px;
+            position: relative;
+        }
+        #nav-logo:hover{
+            transition: .25s;
+            transform: scale(1.05);
         }
         #nav-links{
             display: flex;
-            gap: 48px;
+            gap: 40px;
+
+            position: relative;
         }
             #nav-links > a{
                 text-decoration: none;
-                color: var(--light0-color);
+                color: var(--light-1-color);
                 font-weight: 600;
+
+                position: relative;
             }
+                #nav-links > a:hover{
+                    transition: .2s;
+                    color: var(--light1-color);
+                    transform: scale(1.05);
+                }
+    #header-headings{
+        max-width: 700px;
+        margin-bottom: 96px;
+    }
+        #header-headings > h1{
+            margin-bottom: 40px;
+        }
+        #header-headings > p{
+            text-indent: 0px;
+            font-size: 1.333em;
+            font-weight: 400;
+            margin-bottom: 0px;
+        }
+        #header-headings strong{
+            color: var(--green-1-color);
+            font-family: 'espleetype', sans-serif;
+            font-size: 1em;
+        }
+    button{
+        background-color: var(--red1-color);
+        color: var(--light1-color);
+        margin-bottom: 96px;
+    }
+        button:hover{
+            transition: .15s;
+            background-color: var(--red2-color);
+            color: var(--light0-color);
+        }
+    #seta{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 80px;
+    }
+        #seta > img{
+            width: 48px;
+        }
+    
