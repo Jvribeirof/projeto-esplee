@@ -26,6 +26,32 @@ body, html{
     background-color: var(--light1-color);
 }
 
-strong{
-    color: var(--green1-color);
+header{
+    background: var(--dark0-color) url(imagens/background/bg-main.jpg) center center no-repeat;
+    background-size: cover;
+    color: var(--light0-color);
+    width: 100%;
 }
+
+#header-content{
+    max-width: 1200px;
+    margin: auto;
+}
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+        #nav-logo{
+            width: 48px;
+        }
+        #nav-links{
+            display: flex;
+            gap: 48px;
+        }
+            #nav-links > a{
+                text-decoration: none;
+                color: var(--light0-color);
+                font-weight: 600;
+            }
