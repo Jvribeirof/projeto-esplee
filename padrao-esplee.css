@@ -100,35 +100,18 @@ button{
     font-weight: 500;
 }
 header{
-    background: var(--dark0-color) url(../../imagens/background/bg-cover-g.jpg) center center no-repeat;
+    background-image: url(imagens/background/bg-main-g.jpg);
+    background-color: var(--dark0-color);
+    background-position: center center;
     background-size: cover;
     color: var(--light0-color);
     width: 100%;
-
-    position: relative;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.overlay{
-    background: var(--dark0-color);
-    height: 100%;
-    width: 100%;
-
-    position: absolute;
-
-    opacity: .8;
-    z-index: 0;
 }
 
     #header-content{
         max-width: 1200px;
         padding: 0px 48px;
         margin: auto;
-        
-        z-index: 1;
     }
 
     nav{
@@ -140,13 +123,14 @@ header{
         margin-bottom: 96px;
     }
         #nav-logo{
+            transition: .4s;
             width: 48px;
             position: relative;
         }
-        #nav-logo:hover{
-            transition: .25s;
-            transform: scale(1.05);
-        }
+            #nav-logo:hover{
+                transition: .4s;
+                transform: scale(1.05);
+            }
         #nav-links{
             display: flex;
             gap: 40px;
@@ -154,6 +138,7 @@ header{
             position: relative;
         }
             #nav-links > a{
+                transition: .4s;
                 text-decoration: none;
                 color: var(--light-1-color);
                 font-weight: 600;
@@ -161,7 +146,7 @@ header{
                 position: relative;
             }
                 #nav-links > a:hover{
-                    transition: .2s;
+                    transition: .4s;
                     color: var(--light1-color);
                     transform: scale(1.05);
                 }

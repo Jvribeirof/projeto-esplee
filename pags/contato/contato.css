@@ -20,7 +20,7 @@
 }
 
 header{
-    background: url(../../imagens/background/bg-cover-g.jpg)
+    background-image: url(../../imagens/background/bg-cover-g.jpg)
 }
     #nav2{
         display: flex;
@@ -34,6 +34,7 @@ header{
         }
 
         #nav2 > a{
+            transition: .4s;
             text-decoration: none;
             color: var(--light-1-color);
             font-weight: 400;
@@ -41,7 +42,7 @@ header{
             position: relative;
         }
             #nav2 > a:hover{
-                transition: .2s;
+                transition: .4s;
                 color: var(--light1-color);
                 transform: scale(1.03);
             }
