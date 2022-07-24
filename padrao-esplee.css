@@ -104,12 +104,31 @@ header{
     background-size: cover;
     color: var(--light0-color);
     width: 100%;
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay{
+    background: var(--dark0-color);
+    height: 100%;
+    width: 100%;
+
+    position: absolute;
+
+    opacity: .8;
+    z-index: 0;
 }
 
     #header-content{
         max-width: 1200px;
         padding: 0px 48px;
         margin: auto;
+        
+        z-index: 1;
     }
 
     nav{

@@ -25,7 +25,6 @@ body, html{
     color: var(--dark0-color);
     background-color: var(--light1-color);
 }
-
 header{
     background-image: url('../imagens/background/bg-main-g.jpg');
 }
