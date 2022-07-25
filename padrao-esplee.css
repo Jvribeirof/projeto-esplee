@@ -185,4 +185,10 @@ header{
         width: 100%;
         font-size: 1.333em;
     }
+    #nav-ico-logo{
+        width: 36px;
+    }
+    #nav-menu-ico{
+        width: 40px;
+    }
 }
