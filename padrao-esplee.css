@@ -154,25 +154,28 @@ header{
                     transform: scale(1.05);
                 }
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 1000px){
     *{
         font-size: 18px;
     }
 
+    #header-btn{
+        font-size: 1.111em;
+    }
+}
+
+@media only screen and (max-width: 800px){
     #nav-links{
         display: none;
     }
-
-    #nav-ico-logo{
-        width: 40px;
-    }
-
     #nav-menu-ico{
         display: block;
     }
-
+    #nav-ico-logo{
+        width: 40px;
+    }
     #header-btn{
-        font-size: 1.111em;
+        width: 100%;
     }
 }
 
@@ -181,10 +184,6 @@ header{
         font-size: 16px;
     }
 
-    #header-btn{
-        width: 100%;
-        font-size: 1.333em;
-    }
     #nav-ico-logo{
         width: 36px;
     }
