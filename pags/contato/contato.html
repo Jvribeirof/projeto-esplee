@@ -48,21 +48,23 @@
             <p>Nesse mundo totalmente incerto e complexo se tornou cada vez mais difícil se destacar da maioria. Mas é pra isso que estamos aqui! A Esplee nasceu para ajudar sua empresa no caminho para criar sua relevância nessa era digital através de marcas fortes.</p>
         </div>
         <div id="contato-form">
-            <form autocomplete="off">
+            <form method="post" autocomplete="off">
                 <div class="form-subtypes" id="form-nome">
-                    <label for="n-email">Email</label>
-                    <input type="email" name="n-email">
+                    <label for="n-email">Email*</label>
+                    <input required type="email" name="n-email" placeholder="Insira seu email">
                 </div>
 
                 <div class="form-subtypes" id="form-email">
-                    <label for="n-nome">Nome</label>
-                    <input type="text" name="n-nome">
+                    <label for="n-nome">Nome*</label>
+                    <input required type="text" name="n-nome" placeholder="Insira seu nome">
                 </div>
 
                 <div class="form-subtypes" id="form-msg">
-                    <label for="n-msg">Como podemos ajudar?</label>
-                    <input type="text" name="n-msg">
+                    <label for="n-msg">Descrição*</label>
+                    <input id="inpt-msg" required type="text" name="n-msg" placeholder="Como podemos ajudar?">
                 </div>
+                <button type="submit">Enviar mensagem</button>
+                <p id="atencao">*Essas informações serão usadas apenas para comunicação</p>
             </form>
         </div>
     </main>

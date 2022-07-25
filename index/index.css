@@ -47,13 +47,13 @@ header{
             font-size: 1em;
         }
     button{
-        background-color: var(--red1-color);
+        background-color: var(--red0-color);
         color: var(--light1-color);
         margin-bottom: 96px;
     }
         button:hover{
             transition: .15s;
-            background-color: var(--red2-color);
+            background-color: var(--red1-color);
             color: var(--light0-color);
         }
     #seta{

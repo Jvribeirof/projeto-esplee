@@ -62,7 +62,7 @@ header{
     #seta{
         display: flex;
         justify-content: center;
-        padding-bottom: 80px;
+        padding-bottom: 140px;
     }
         #seta > img{
             width: 48px;
@@ -72,7 +72,11 @@ header{
 main{
     display: flex;
     flex-direction: row;
-    margin-top: 48px;
+    gap: 96px;
+
+    max-width: 1200px;
+    padding: 64px 48px 96px 48px;
+    margin: auto;
 }
     #contato-content{
         width: 50%;
@@ -90,15 +94,11 @@ main{
             .form-subtypes{
                 display: flex;
                 flex-direction: column;
-                width: 60%;
-
-                position: relative;
+                width: 100%;
             }
                 .form-subtypes > label{
-                    color: var(--light-2-color);
-                    position: absolute;
-                    top: 16px;
-                    left: 16px;
+                    color: var(--dark-2-color);
+                    padding: 0px 0px 12px 12px;
                 }
                 .form-subtypes > input{
                     background-color: var(--light0-color);
@@ -106,18 +106,43 @@ main{
                     padding: 16px;
                     border-radius: 3px;
                     border: none;
-                }
 
-                    input:focus ~ label{
-                        top: 0px;
+                    position: relative;
+                }
+                    .form-subtypes > input::placeholder{
+                        color: var(--light-2-color);
+
+                        position: absolute;
                     }
+                    #inpt-msg{
+                        height: 184px;
+                    }
+            button{
+                background-color: var(--red0-color);
+                color: var(--light1-color);
+                width: 100%;
+            }
+                button:hover{
+                    background-color: var(--red1-color);
+                    color: var(--light0-color);
+                }
+            #atencao{
+                text-align: center;
+            }
+
                     
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 1000px){
+    #contato-header-heading > p{
+        margin-bottom: 48px;
+    }
+    #seta{
+        padding-bottom: 96px;
+    }
     main{
         flex-direction:column;
     }
         #contato-content{
-            width: 100%;
+            display: none;
         }
         #contato-form{
             width: 100%;
