@@ -122,15 +122,19 @@ header{
         padding-top: 48px;
         margin-bottom: 96px;
     }
-        #nav-logo{
+        .nav-ico{
             transition: .4s;
             width: 48px;
             position: relative;
         }
-            #nav-logo:hover{
+            .nav-ico:hover{
                 transition: .4s;
                 transform: scale(1.05);
             }
+        #nav-menu-ico{
+            display: none;
+        }
+
         #nav-links{
             display: flex;
             gap: 40px;
@@ -150,3 +154,36 @@ header{
                     color: var(--light1-color);
                     transform: scale(1.05);
                 }
+
+@media only screen and (max-width: 800px){
+    *{
+        font-size: 18px;
+    }
+
+    #nav-links{
+        display: none;
+    }
+
+    #nav-ico-logo{
+        width: 40px;
+    }
+
+    #nav-menu-ico{
+        display: block;
+    }
+
+    #header-btn{
+        font-size: 1.111em;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    *{
+        font-size: 16px;
+    }
+
+    #header-btn{
+        width: 100%;
+        font-size: 1.333em;
+    }
+}

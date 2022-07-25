@@ -67,3 +67,59 @@ header{
         #seta > img{
             width: 48px;
         }
+
+
+main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 48px;
+}
+    #contato-content{
+        width: 50%;
+    }
+    #contato-form{
+        width: 50%;
+    }
+        #contato-form form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+        }
+            .form-subtypes{
+                display: flex;
+                flex-direction: column;
+                width: 60%;
+
+                position: relative;
+            }
+                .form-subtypes > label{
+                    color: var(--light-2-color);
+                    position: absolute;
+                    top: 16px;
+                    left: 16px;
+                }
+                .form-subtypes > input{
+                    background-color: var(--light0-color);
+                    
+                    padding: 16px;
+                    border-radius: 3px;
+                    border: none;
+                }
+
+                    input:focus ~ label{
+                        top: 0px;
+                    }
+                    
+@media only screen and (max-width: 800px){
+    main{
+        flex-direction:column;
+    }
+        #contato-content{
+            width: 100%;
+        }
+        #contato-form{
+            width: 100%;
+        }
+}
