@@ -73,6 +73,7 @@ strong{
 
 /*CONFIGURAÇÃO DOS BOTÕES-------------------------------*/
 button{
+    cursor: pointer;
     transition: .15s;
     padding: 16px 32px;
     border-radius: 3px;
