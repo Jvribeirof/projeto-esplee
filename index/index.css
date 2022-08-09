@@ -138,3 +138,69 @@ section#pt2{
                     section#pt2 div.content div.cases div.case:hover{
                         transition: .2s;
                         transform: scale(1.05);}
+    section#pt3 div.content{
+        padding-right: 500px;}
+            section#pt3 div.content div.passos div.cont{
+                position: relative;
+                display: flex;
+                justify-content: space-between;
+                margin: 64px 0px;}
+                div.passos div.cont div.item{
+                    transition: .3s;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    background-color: var(--light-1-color);
+                    width: 76px;
+                    height: 76px;
+                    transform: rotate(45deg);
+                    position: relative;}
+                    div.passos div.cont div.item:hover{
+                        transition: .4s;
+                        background-color: var(--light-2-color);
+                        border: 8px solid var(--green0-color);}
+                div.passos div.cont div.barra{
+                    background-color: var(--light-2-color);
+                    height: 8px;
+                    width: 95%;
+                    position: absolute;
+                    top: 44%;
+                    z-index: -1;}
+                div.passos div.cont div.barra.full{
+                    background-color: var(--green0-color);
+                    height: 8px;
+                    width: 5%;
+                    position: absolute;
+                    top: 32%;
+                    z-index: -1;}
+                div.passos div.cont div.item p{
+                    transform: rotate(315deg);
+                    font-size: 1.333em;
+                    font-weight: 600;}
+section#pt4{
+    color: var(--light1-color);
+    background-color: var(--red0-color);}
+    section#pt4 div.content{
+        margin: 120px auto;
+        padding-right: 500px;} 
+    section#pt4 div.content div.tag h2{
+        background-color: var(--dark0-color);}
+section#pt5{
+    background-color: var(--dark0-color);
+    color: var(--light1-color);
+    text-align: center;}
+    section#pt5 div.content{
+        margin: 120px auto;}
+    section#pt5 div.content h1 strong{
+        color: var(--green-1-color);
+        font-family: 'espleetype', sans-serif;
+        font-size: 1em;}
+        section#pt5 div.content p{
+        margin-bottom: 48px;}
+section#pt6{
+    background-color: var(--dark0-color);
+    color: var(--light1-color);}
+section#pt7{
+    background-color: var(--dark0-color);
+    color: var(--light1-color);}
