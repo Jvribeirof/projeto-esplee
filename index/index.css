@@ -140,7 +140,10 @@ section#pt2{
                         transform: scale(1.05);}
     section#pt3 div.content{
         padding-right: 500px;}
-            section#pt3 div.content div.passos div.cont{
+        section#pt3 div.content div.passos div.cont{
+            position: relative;
+        }
+            section#pt3 div.content div.passos div.cont div.itens{
                 position: relative;
                 display: flex;
                 justify-content: space-between;
