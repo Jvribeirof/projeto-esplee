@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste</title>
+</head>
+<style>
+    section{
+        width: 100vw;
+        height: 200px;
+        background-color: rgb(187, 0, 255);
+        position: relative;
+    }
+    .triang{
+        position: absolute; 
+        z-index: 1;}
+        .triang.top{
+            border-bottom: 50px solid rgb(255, 0, 0);
+            top: -50px;}
+        .triang.bottom{
+            border-top: 50px solid rgb(255, 0, 0);
+            bottom: -50px;}
+        .triang.right{
+            border-left: 50vw solid rgba(255, 0, 0, 0);
+            right: 0px;}
+        .triang.left{
+            border-right: 50vw solid rgba(255, 0, 0, 0);
+            left: 0px;}
+</style>
+<body>
+    <br>
+    <br>
+    <br>
+    <br>
+    <section>
+        <div class="triang right top"></div>
+        <div class="triang left top"></div>
+        <div class="triang left bottom"></div>
+        <div class="triang right bottom"></div>
+    </section>
+</body>
+</html>

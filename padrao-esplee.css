@@ -112,7 +112,8 @@ header{
     background-position: center center;
     background-size: cover;
     color: var(--light0-color);
-    width: 100%;}
+    width: 100%; 
+    position: relative;}
     #header-content{
         max-width: 1400px;
         padding: 0px 32px;
@@ -152,11 +153,29 @@ header{
 
 /*CONFIGURAÇÃO DA SECTION*/
 section{
-    display: flex;}
+    display: flex; 
+    position: relative;}
     section div.content{
         max-width: 1400px;
         padding: 0px 32px;
         margin: 76px auto;}
+
+/*BORDAS TRIÂNGULARES*/
+.triang{
+    position: absolute; 
+    z-index: 1;}
+    .triang.top{
+        border-bottom: 50px solid rgb(255, 0, 0);
+        top: -50px;}
+    .triang.bottom{
+        border-top: 50px solid rgb(255, 0, 0);
+        bottom: -50px;}
+    .triang.right{
+        border-left: 50vw solid rgba(255, 0, 0, 0);
+        right: 0px;}
+    .triang.left{
+        border-right: 50vw solid rgba(255, 0, 0, 0);
+        left: 0px;}
 
 @media only screen and (max-width: 1000px){
     *{

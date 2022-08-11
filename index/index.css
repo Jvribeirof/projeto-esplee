@@ -26,7 +26,7 @@ header{
     background-image: url('../imagens/background/bg-main-g.jpg');}
     #header-headings{
         max-width: 700px;
-        margin-bottom: 96px;}
+        margin-bottom: 136px;}
         #header-headings > h1{
             margin-bottom: 40px;}
         #header-headings > p{
@@ -48,6 +48,10 @@ header{
             #seta > img:hover{
                 transition: .4s;
                 transform: translateY(12px);}
+section#pt1 div.triang.top{
+    border-bottom: 50px solid var(--light1-color);}
+section#pt1 div.triang.bottom{
+    border-top: 50px solid var(--light1-color);}
 section#pt1 div.content{
     display: flex;
     flex-direction: row;
@@ -55,8 +59,7 @@ section#pt1 div.content{
 
     height: 450px;
     margin: auto;
-    margin-top: 100px;
-    margin-bottom: 232px;}
+    margin: 180px auto;}
     section div.content .tag h2{
         display: inline-block;
         font-size: 1em;
@@ -96,17 +99,21 @@ section#pt1 div.content{
 section#pt2{
     color: var(--light1-color);
     background-color: var(--dark0-color);}
+    section#pt2 div.triang.bottom{
+        border-top: 50px solid var(--dark0-color);}
     section#pt2 div.content{
-        margin: 180px auto;
+        max-width: 1800px;
+        margin-top: 240px ;
+        margin-bottom: 140px ;
         text-align: center;}
         section#pt2 div.content div.cases{
             display: flex;
-            justify-content: space-between;
+            gap: 44px;
             margin: 80px auto;}
             section#pt2 div.content div.cases div.case{
                 transition: .3s;
-                width: 400px;
-                height: 320px;
+                width: 550px;
+                height: 440px;
                 border-radius: 12px;
                 background-color: var(--dark-2-color);
                 position: relative;
@@ -138,11 +145,14 @@ section#pt2{
                     section#pt2 div.content div.cases div.case:hover{
                         transition: .2s;
                         transform: scale(1.05);}
+    section#pt3 div.triang.bottom{
+        border-top: 50px solid var(--light1-color);}
     section#pt3 div.content{
+        margin-top: 200px;
+        margin-bottom: 180px;
         padding-right: 500px;}
         section#pt3 div.content div.passos div.cont{
-            position: relative;
-        }
+            position: relative;}
             section#pt3 div.content div.passos div.cont div.itens{
                 position: relative;
                 display: flex;
@@ -184,8 +194,11 @@ section#pt2{
 section#pt4{
     color: var(--light1-color);
     background-color: var(--red0-color);}
+    section#pt4 div.triang.bottom{
+        border-top: 50px solid var(--red0-color);}
     section#pt4 div.content{
-        margin: 120px auto;
+        margin-top: 200px;
+        margin-bottom: 180px;
         padding-right: 500px;} 
     section#pt4 div.content div.tag h2{
         background-color: var(--dark0-color);}
@@ -194,7 +207,8 @@ section#pt5{
     color: var(--light1-color);
     text-align: center;}
     section#pt5 div.content{
-        margin: 120px auto;}
+        margin-top: 200px;
+        margin-bottom: 120px;}
     section#pt5 div.content h1 strong{
         color: var(--green-1-color);
         font-family: 'espleetype', sans-serif;
