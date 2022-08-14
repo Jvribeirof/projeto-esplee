@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste</title>
+</head>
+<style>
+    body{
+        background-color: aquamarine;
+    }
+    .accordion{
+        background-color: aliceblue;
+        width: 100%;
+    }
+    .accordion div.header button{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        width: 100%;
+        border: none;
+        padding: 16px 24px;
+
+        background-color: purple;
+        color: aliceblue;
+    }
+    .accordion div.header span{
+        font-size: 16px;
+    }
+    .accordion div.header img{
+        transition: .3s;
+        width: 32px;
+    }
+    .rotate{
+        transition: .3s;
+        transform: rotate(180deg);
+    }
+    .accordion div.content p{
+        padding: 16px 24px;
+        margin: 0px;
+    }
+</style>
+<body>
+    <br>
+    <br>
+    <br>
+    <br>
+    <section>
+        <div class="accordion">
+                <div class="header">
+                    <button>
+                        <span>Accordion #1</span>
+                        <img src="imagens/icon/light-arrow-down.svg" alt="">
+                    </button>
+                </div>
+                <div class="content">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. A similique commodi, ducimus velit, reprehenderit dicta quia ipsa, ratione illo ipsam aliquid voluptas voluptatum accusamus cumque qui corporis quis maiores esse.
+                    </p>
+                </div>
+        </div>
+        <div class="accordion">
+                <div class="header">
+                    <button>
+                        <span>Accordion #1</span>
+                        <img src="imagens/icon/light-arrow-down.svg" alt="">
+                    </button>
+                </div>
+                <div class="content">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. A similique commodi, ducimus velit, reprehenderit dicta quia ipsa, ratione illo ipsam aliquid voluptas voluptatum accusamus cumque qui corporis quis maiores esse.
+                    </p>
+                </div>
+        </div>
+    </section>
+    <script src="jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            //JS DO ACCORDION
+
+            $('div.accordion button').click(function(){
+                $(this).children('img').toggleClass('rotate');
+                $(this).parent().next().slideToggle(400);
+            })
+
+            //----------------
+        })
+    </script>
+</body>
+</html>

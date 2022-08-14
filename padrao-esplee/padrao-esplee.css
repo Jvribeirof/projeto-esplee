@@ -159,6 +159,35 @@ section{
         max-width: 1400px;
         padding: 0px 32px;
         margin: 76px auto;}
+        
+/*ACCORDIONS*/
+div.accordion{
+    background-color: var(--dark-2-color);
+    margin: auto;
+    max-width: 650px;}
+    div.accordion div.header button{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        width: 100%;
+        border: none;
+        padding: 16px 24px;
+
+        background-color: var(--dark-1-color);
+        color: var(--light1-color);}
+    div.accordion div.header img{
+        transition: .3s;
+        width: 32px;}
+    div.accordion div.content-ac{
+        width: 100%;
+    }
+    div.accordion div.content-ac p{
+        padding: 16px 24px;
+        margin: 0px;}
+    .rotate{
+        transition: .3s;
+        transform: rotate(180deg);}
 
 /*BORDAS TRIÂNGULARES*/
 .triang{
