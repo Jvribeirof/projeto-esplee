@@ -164,7 +164,7 @@ section{
 div.accordion{
     background-color: var(--dark-2-color);
     margin: auto;
-    max-width: 650px;}
+    width: 650px;}
     div.accordion div.header button{
         display: flex;
         justify-content: space-between;
@@ -183,7 +183,8 @@ div.accordion{
         width: 100%;
     }
     div.accordion div.content-ac p{
-        padding: 16px 24px;
+        color: var(--light1-color);
+        padding: 24px 48px;
         margin: 0px;}
     .rotate{
         transition: .3s;
