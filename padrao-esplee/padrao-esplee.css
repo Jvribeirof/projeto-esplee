@@ -118,7 +118,7 @@ header{
         max-width: 1400px;
         padding: 0px 32px;
         margin: auto;}
-    nav{
+    #header-content nav{
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -162,9 +162,12 @@ section{
         
 /*ACCORDIONS*/
 div.accordion{
+    display: flex;
+    flex-direction: column;
+    
     background-color: var(--dark-2-color);
     margin: auto;
-    width: 650px;}
+    width: 100%;}
     div.accordion div.header button{
         display: flex;
         justify-content: space-between;
@@ -180,11 +183,10 @@ div.accordion{
         transition: .3s;
         width: 32px;}
     div.accordion div.content-ac{
-        width: 100%;
-    }
+        width: 100%;}
     div.accordion div.content-ac p{
         color: var(--light1-color);
-        padding: 24px 48px;
+        padding: 24px 24px;
         margin: 0px;}
     .rotate{
         transition: .3s;
@@ -195,11 +197,11 @@ div.accordion{
     position: absolute; 
     z-index: 1;}
     .triang.top{
-        border-bottom: 50px solid rgb(255, 0, 0);
-        top: -50px;}
+        border-bottom: 32px solid rgb(255, 0, 0);
+        top: -32px;}
     .triang.bottom{
-        border-top: 50px solid rgb(255, 0, 0);
-        bottom: -50px;}
+        border-top: 32px solid rgb(255, 0, 0);
+        bottom: -32px;}
     .triang.right{
         border-left: 50vw solid rgba(255, 0, 0, 0);
         right: 0px;}
