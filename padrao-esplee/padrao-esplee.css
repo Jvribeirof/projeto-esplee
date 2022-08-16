@@ -152,7 +152,8 @@ header{
 
 /*CONFIGURAÇÃO DA SECTION*/
 section{
-    display: flex; 
+    display: flex;
+    flex-direction: column;
     position: relative;}
     section div.content{
         max-width: 1400px;
