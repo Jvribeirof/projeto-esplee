@@ -73,24 +73,23 @@ nav{
         margin-bottom: 24px;
 }
 p{
-    text-align: justify;
-    text-indent: 2em;}
+    text-align: justify;}
     nav > img{
-        width: 24px;
-    }
+        width: 24px;}
     nav > a{
         transition: .4s;
         text-decoration: none;
         color: var(--dark0-color);
         font-weight: 00;
 
-        position: relative;
-    }
+        position: relative;}
         nav > a:hover{
             transition: .4s;
             color: var(--dark0-color);
-            transform: scale(1.03);
-        }
+            transform: scale(1.03);}
+#flex{
+    display: flex;
+    flex-direction: column;}
 div.galery img{
     margin-bottom: -1%;
     width: 100%;}

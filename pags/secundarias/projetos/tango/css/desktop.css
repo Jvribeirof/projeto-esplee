@@ -1,0 +1,15 @@
+header{
+    background-image: url(../imagens/g/tango-g.jpg);}
+section div.content{
+    width: 1200px;
+}
+#flex{
+    flex-direction: row;
+    gap: 24px;
+}
+#div1{
+    flex: 50%;
+}
+#div2{
+    flex: 50%;
+}
