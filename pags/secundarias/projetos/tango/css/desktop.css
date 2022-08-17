@@ -1,15 +1,24 @@
 header{
     background-image: url(../imagens/g/tango-g.jpg);}
+    #header-content{
+        height: 640px;}
+        header div.nav{
+            padding-top: 48px;
+        }
 section div.content{
     width: 1200px;
 }
 #flex{
     flex-direction: row;
-    gap: 24px;
+    justify-content: center;
+    margin-top: 64px;
 }
 #div1{
     flex: 50%;
 }
 #div2{
     flex: 50%;
+}
+div.tag{
+    font-size: 1em;
 }

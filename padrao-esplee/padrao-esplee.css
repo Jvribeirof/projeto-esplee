@@ -197,11 +197,11 @@ div.accordion{
     position: absolute; 
     z-index: 1;}
     .triang.top{
-        border-bottom: 32px solid rgb(255, 0, 0);
-        top: -32px;}
+        border-bottom: 50px solid var(--light1-color);
+        top: -50px;}
     .triang.bottom{
-        border-top: 32px solid rgb(255, 0, 0);
-        bottom: -32px;}
+        border-top: 50px solid var(--light1-color);
+        bottom: -50px;}
     .triang.right{
         border-left: 50vw solid rgba(255, 0, 0, 0);
         right: 0px;}
@@ -240,4 +240,16 @@ div.accordion{
     }
     #nav-menu-ico{
         width: 40px;
-    }}
+    }
+    .triang.top{
+        border-bottom: 32px solid var(--light1-color);
+        top: -32px;}
+    .triang.bottom{
+        border-top: 32px solid var(--light1-color);
+        bottom: -32px;}
+    .triang.right{
+        border-left: 50vw solid rgba(255, 0, 0, 0);
+        right: 0px;}
+    .triang.left{
+        border-right: 50vw solid rgba(255, 0, 0, 0);
+        left: 0px;}}

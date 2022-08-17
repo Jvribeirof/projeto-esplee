@@ -23,14 +23,21 @@ header{
         height: 440px;}
 header div.nav{
     display: flex;
+    align-items: center;
     justify-content: space-between;
     padding-top: 32px;}
 header div.icon{
     width: 40px;}
+@keyframes seta {
+    0%{
+        transform: translateX(4px);
+    }
+    100%{
+        transform: translateX(-4px);
+    }}
 header div.icon:hover{
+    animation: seta .5s infinite alternate-reverse;
     transform: scale(1.1);}
-.triang.top{
-    border-bottom: 32px solid var(--light1-color);}
 main{
     display: flex;
     flex-direction: column;
@@ -43,7 +50,7 @@ main div.content{
     margin: 76px auto;
 }
     div.headings{
-        margin: 48px 0px 24px 0px;
+        margin: 0px 0px 24px 0px;
     }
     div.tags{
         margin-bottom: 32px;
@@ -89,7 +96,8 @@ p{
             transform: scale(1.03);}
 #flex{
     display: flex;
-    flex-direction: column;}
+    flex-direction: column;
+    margin: 48px 0px 0px 0px}
 div.galery img{
     margin-bottom: -1%;
     width: 100%;}
@@ -100,7 +108,6 @@ div.social{
     gap: 24px;
     padding: 24px;
 }
-
 div.social img{
     width: 45%;
     margin: auto;
@@ -109,4 +116,9 @@ div.social img{
 #n2 img{
     width: 100%;
     margin: auto;
+}
+@media screen and (min-width: 600px){
+    header div.icon{
+        width: 48px;
+    }
 }
