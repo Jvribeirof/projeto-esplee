@@ -18,7 +18,7 @@
     --light0-color:#F8F0FF;
     --light1-color:#FBF7FF;}
 header{
-    background-image: url(../imagens/tango-p.jpg);}
+    background-image: url(../imagens/p/tango-p.jpg);}
     #header-content{
         height: 440px;}
 header div.nav{
@@ -31,9 +31,16 @@ header div.icon:hover{
     transform: scale(1.1);}
 .triang.top{
     border-bottom: 32px solid var(--light1-color);}
-
-section div.content{
+main{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+main div.content{
     margin-top: 64px;
+    max-width: 1400px;
+    padding: 0px 32px;
+    margin: 76px auto;
 }
     div.headings{
         margin: 48px 0px 24px 0px;
@@ -85,4 +92,22 @@ p{
             transform: scale(1.03);
         }
 div.galery img{
+    margin-bottom: -4px;
     width: 100%;}
+div.social{
+    display: flex;
+    flex-flow: row wrap;
+    background-color: var(--dark0-color);
+    gap: 24px;
+    padding: 24px;
+}
+
+div.social img{
+    width: 45%;
+    margin: auto;
+}
+
+#n2 img{
+    width: 100%;
+    margin: auto;
+}
