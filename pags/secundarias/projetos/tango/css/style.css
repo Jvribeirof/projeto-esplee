@@ -92,7 +92,7 @@ p{
             transform: scale(1.03);
         }
 div.galery img{
-    margin-bottom: -4px;
+    margin-bottom: -1%;
     width: 100%;}
 div.social{
     display: flex;
