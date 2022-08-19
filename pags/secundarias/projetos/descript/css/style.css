@@ -28,13 +28,6 @@ header{
             padding-top: 32px;}
         header div.icon{
             width: 40px;}
-@keyframes seta {
-    0%{
-        transform: translateX(4px);
-    }
-    100%{
-        transform: translateX(-4px);
-    }}
             header div.icon:hover{
                 animation: seta .5s infinite alternate-reverse;
                 transform: scale(1.1);}
@@ -46,7 +39,9 @@ main div.content{
     margin-top: 64px;
     max-width: 1400px;
     padding: 0px 32px;
-    margin: 76px auto;}
+    margin: 76px auto;
+    animation: fade 1.5s forwards;
+    opacity: 0;}
     div.headings{
         margin: 0px 0px 24px 0px;}
     div.tags{
@@ -62,11 +57,11 @@ main div.content{
         font-family: 'Roboto',sans-serif;
         font-size: 3.157em;
         font-weight: 500;
-        margin-bottom: 0.5em;}
+        margin-bottom: 16px;}
     h2{
         font-size: 1.333em;
         font-weight: 400;
-        margin-bottom: 0.75em;}
+        margin-bottom: 40px;}
 p{
     text-align: justify;}
 nav{
@@ -81,7 +76,7 @@ nav{
         transition: .4s;
         text-decoration: none;
         color: var(--dark0-color);
-        font-weight: 00;
+        font-weight: 400;
 
         position: relative;}
         nav > a:hover{

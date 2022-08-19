@@ -209,6 +209,23 @@ div.accordion{
         border-right: 50vw solid rgba(255, 0, 0, 0);
         left: 0px;}
 
+/*ANIMAÇÕES*/
+@keyframes fade {
+    0%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }}
+@keyframes seta {
+    0%{
+        transform: translateX(4px);
+    }
+    100%{
+        transform: translateX(-4px);
+    }}
+
 @media only screen and (max-width: 1000px){
     *{
         font-size: 18px;
