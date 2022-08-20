@@ -40,7 +40,7 @@ main div.content{
     max-width: 1400px;
     padding: 0px 32px;
     margin: 76px auto;
-    animation: fade 1.5s forwards;
+    animation: fade 1s forwards;
     opacity: 0;}
     div.headings{
         margin: 0px 0px 24px 0px;}
@@ -95,21 +95,21 @@ section.galery{
         div.galery picture, div.galery img{
             margin-bottom: -1%;
             width: 100%;}
+            .js-pic{
+                opacity: 0;
+            }
         div.galery div.social{
             display: flex;
             gap: 24px;
-            padding: 24px;
-        }
+            padding: 24px;}
         div.galery div.social div{
             display: flex;
             flex-direction: column;
-            gap: 24px;
-        }
+            gap: 24px;}
 #cta div.content{
-    text-align: center;
-}
+    text-align: center;}
+
 @media screen and (min-width: 600px){
-    header div.icon{
-        width: 48px;
-    }
-}
+header div.icon{
+    width: 48px;
+}}

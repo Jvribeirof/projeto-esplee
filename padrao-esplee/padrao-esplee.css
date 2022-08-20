@@ -212,12 +212,14 @@ div.accordion{
 /*ANIMAÇÕES*/
 @keyframes fade {
     0%{
-        transform: translateY(30px);
+        transform: translate3d(0px, 20px, 0px);
     }
     100%{
-        transform: translateY(0px);
         opacity: 1;
+        transform: translate3d(0px, 0px, 0px);
     }}
+    .fade{
+        animation: fade 1s forwards}
 @keyframes seta {
     0%{
         transform: translateX(4px);
@@ -226,6 +228,7 @@ div.accordion{
         transform: translateX(-4px);
     }}
 
+/*MEDIA QUERIES*/
 @media only screen and (max-width: 1000px){
     *{
         font-size: 18px;
@@ -236,17 +239,13 @@ div.accordion{
 @media only screen and (max-width: 800px){
     /*MUDAR O NAV PARA ICON*/
     #nav-links{
-        display: none;
-    }
+        display: none;}
     #nav-menu-ico{
-        display: block;
-    }
+        display: block;}
     #nav-ico-logo{
-        width: 40px;
-    }
+        width: 40px;}
     button{
-        width: 100%;
-    }}
+        width: 100%;}}
 @media only screen and (max-width: 600px){
     *{
         font-size: 16px;
