@@ -9,6 +9,7 @@
         body{
             font-family: Arial, Helvetica, sans-serif;
             background-color: black;
+            overflow-x: hidden;
         }
         nav{
             display: flex;
@@ -32,8 +33,7 @@
         }
         .hide{
             transition: 1s;
-            opacity: 0;
-            width: 0px;
+            transform: translateX(300px);
         }
 
         .links{
