@@ -17,29 +17,35 @@
         .nav-ico{
             width: 32px;
         }
-        #nav-links{
-            position: absolute;
-            top: 0px;
-            right: 0px;
-
-            width: 100%;
-            height: 100%;
-            background-color: rgba(48, 0, 93, 0.361);
-        }
         .content{
+            transition: 1s;
+            display: block;
             position: absolute;
-            top: 0px;
+            top: 48px;
             right: 0px;
 
             width: 250px;
-            height: calc(100% - 30px);
-            background-color: rgba(48, 0, 93);
+            height: calc(100% - 128px);
+            background-color: rgb(24, 0, 46);
 
-            padding: 30px 0px 0px 30px;
+            padding: 80px 0px 0px 30px;
+        }
+        .hide{
+            transition: 1s;
+            opacity: 0;
+            width: 0px;
+        }
 
+        .links{
             display: flex;
             flex-direction: column;
             gap: 18px;
+        }
+        .cancel{
+            width: 32px;
+            position: absolute;
+            right: 32px;
+            top: 32px;
         }
         a{
             font-size: 18px;
@@ -51,19 +57,35 @@
 <body>
     <nav>
         <div class="nav-ico" id="nav-ico-logo">
-            <a href="index.html"><img src="../../imagens/logos/SVG/Simbolo.svg" alt="nav-logo"></a>
+            <a href="index.html"><img src="../imagens/logos/SVG/Simbolo.svg" alt="nav-logo"></a>
         </div>
         <div class="nav-ico" id="nav-menu-ico">
-            <a href="#"><img src="../../imagens/icon/light-menu.svg" alt="menu-ico"></a>
+            <a href="#"><img src="../imagens/icon/light-menu.svg" alt="menu-ico"></a>
         </div>
     </nav>
-    <div id="nav-links">
         <div class="content">
-            <a href="#">Na Rota</a>
-            <a href="#">Projeto</a>
-            <a href="#">Sobre Nós</a>
-            <a href="../secundarias/contato/contato.html">Contato</a>
+            <div class="cancel">
+                <a href="#">
+                    <img src="../imagens/icon/light-cancel.svg" alt="cancel">
+                </a>
+            </div>
+            <div class="links">
+                <a href="#">Na Rota</a>
+                <a href="#">Projeto</a>
+                <a href="#">Sobre Nós</a>
+                <a href="#">Contato</a>
+            </div>
         </div>
-    </div>
+    <script src="../padrao-esplee/jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#nav-menu-ico').click(function(){
+                $('.content').toggleClass('hide');
+            })
+            $('.cancel').click(function(){
+                $('.content').toggleClass('hide');
+            })
+        })
+    </script>
 </body>
 </html>
