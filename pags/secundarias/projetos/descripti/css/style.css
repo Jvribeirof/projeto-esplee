@@ -18,7 +18,7 @@
     --light0-color:#F8F0FF;
     --light1-color:#FBF7FF;}
 header{
-    background-image: url();}
+    background-image: url(../imagens/p/mobile-p.jpg);}
     #header-content{
         height: 440px;}
         header div.nav{
@@ -88,7 +88,7 @@ nav{
     flex-direction: column;
     margin: 48px 0px 0px 0px}
 section.galery{
-    background-color: var(--dark0-color);}
+    background-color: #212121;}
     div.galery{
         display: flex;
         flex-direction: column;}
@@ -97,6 +97,8 @@ section.galery{
             width: 100%;}
         div.galery div.social{
             display: flex;
+            align-items: center;
+
             gap: 24px;
             padding: 24px;
         }
@@ -105,6 +107,8 @@ section.galery{
             flex-direction: column;
             gap: 24px;
         }
+            .js-pic{
+                opacity: 0;}
 #cta div.content{
     text-align: center;
 }

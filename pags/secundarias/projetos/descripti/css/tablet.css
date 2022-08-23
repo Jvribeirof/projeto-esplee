@@ -1,5 +1,5 @@
 header{
-    background-image: url();}
+    background-image: url(../imagens/m/mobile-m.jpg);}
 @media screen and (min-width: 1000px){
     #header-content{
         height: 520px;}
@@ -16,5 +16,8 @@ header{
         }
         #div2{
             flex: 50%;
+        }
+        div.galery div.social div{
+            flex-direction: row;
         }
 }

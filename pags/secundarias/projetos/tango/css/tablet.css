@@ -17,4 +17,7 @@ header{
         #div2{
             flex: 50%;
         }
+        div.galery div.social div{
+            flex-direction: row;
+        }
 }
