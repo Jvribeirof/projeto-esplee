@@ -1,0 +1,28 @@
+:root{
+    --green-1-color:#4DD1B7;
+    --green0-color:#32B79D;
+    --green1-color:#2B9E88;
+
+    --red0-color:#D84169;
+    --red1-color:#BF3A5D;
+    --red2-color:#A6294A;
+
+    --dark-2-color:#28004C;
+    --dark-1-color:#1B0033;
+    --dark0-color:#0D0019;
+
+    --light-2-color:#DCCFE5;
+    --light-1-color:#ECE4F2;
+    --light0-color:#F8F0FF;
+    --light1-color:#FBF7FF;}
+
+header{
+    background-image: url(imagens/p/mobile-p.jpg);}
+section.galery{
+    background-color: #212121;}
+@media screen and (min-width: 640px) {
+    header{
+        background-image: url(imagens/m/mobile-m.jpg);}}
+@media screen and (min-width: 1280px) {
+    header{
+        background-image: url(imagens/g/mobile-g.jpg);}}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: black;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+        }
+        .nav-ico{
+            width: 32px;
+        }
+        #nav-links{
+            position: absolute;
+            top: 0px;
+            right: 0px;
+
+            width: 100%;
+            height: 100%;
+            background-color: rgba(48, 0, 93, 0.361);
+        }
+        .content{
+            position: absolute;
+            top: 0px;
+            right: 0px;
+
+            width: 250px;
+            height: calc(100% - 30px);
+            background-color: rgba(48, 0, 93);
+
+            padding: 30px 0px 0px 30px;
+
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+        }
+        a{
+            font-size: 18px;
+            text-decoration: none;
+            color: azure;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-ico" id="nav-ico-logo">
+            <a href="index.html"><img src="../../imagens/logos/SVG/Simbolo.svg" alt="nav-logo"></a>
+        </div>
+        <div class="nav-ico" id="nav-menu-ico">
+            <a href="#"><img src="../../imagens/icon/light-menu.svg" alt="menu-ico"></a>
+        </div>
+    </nav>
+    <div id="nav-links">
+        <div class="content">
+            <a href="#">Na Rota</a>
+            <a href="#">Projeto</a>
+            <a href="#">Sobre Nós</a>
+            <a href="../secundarias/contato/contato.html">Contato</a>
+        </div>
+    </div>
+</body>
+</html>
