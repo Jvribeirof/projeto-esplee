@@ -15,9 +15,13 @@
             display: flex;
             justify-content: space-between;
         }
-        .nav-ico{
-            width: 32px;
-        }
+            .nav-ico{
+                padding: 32px;
+                width: 32px;
+            }
+            #nav-menu-ico{
+                z-index: 1;
+            }
         .content{
             transition: 1s;
             display: block;
@@ -25,42 +29,48 @@
             top: 0px;
             right: 0px;
 
-            width: 250px;
+            opacity: 0;
+            width: 0px;
+            padding: 80px 0px 0px 0px;
+
             height: calc(100% - 80px);
             background-color: rgb(24, 0, 46);
+        }
+            .show{
+                transition: 1s;
+                opacity: 1;
+                padding: 80px 0px 0px 30px;
+                width: 250px;
+            }
+            .background{
+                display: none;
+                position: absolute;
+                top: 0px;
+                left: 0px;
 
-            padding: 80px 0px 0px 30px;
-        }
-        .hide{
-            transition: 1s;
-            transform: translateX(300px);
-        }
-        .background{
-            display: none;
-            position: absolute;
-            top: 0px;
-            left: 0px;
-
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 255, 255, 0.292);
-        }
-        .links{
-            display: flex;
-            flex-direction: column;
-            gap: 18px;
-        }
-        .cancel{
-            width: 32px;
-            position: absolute;
-            right: 32px;
-            top: 32px;
-        }
-        a{
-            font-size: 18px;
-            text-decoration: none;
-            color: azure;
-        }
+                width: 100%;
+                height: 100%;
+                background-color: rgba(23, 0, 39, 0.517);
+            }
+            .links{
+                display: flex;
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+                .links a{
+                    display: none;
+                    font-size: 21px;
+                    font-weight: 600;
+                    text-decoration: none;
+                    color: azure;
+                }
+                .cancel{
+                    display: block;
+                    width: 32px;
+                    position: absolute;
+                    right: 32px;
+                    top: 32px;
+                }
     </style>
 </head>
 <body>
@@ -69,16 +79,11 @@
             <a href="index.html"><img src="../imagens/logos/SVG/Simbolo.svg" alt="nav-logo"></a>
         </div>
         <div class="nav-ico" id="nav-menu-ico">
-            <a href="#"><img src="../imagens/icon/light-menu.svg" alt="menu-ico"></a>
+            <a href="#"><img id="img-cancel" src="../imagens/icon/light-menu.svg" alt="menu-ico"></a>
         </div>
     </nav>
         <div class="background"></div>
-        <div class="content hide">
-            <div class="cancel">
-                <a href="#">
-                    <img src="../imagens/icon/light-cancel.svg" alt="cancel">
-                </a>
-            </div>
+        <div class="content">
             <div class="links">
                 <a href="#">Na Rota</a>
                 <a href="#">Projeto</a>
@@ -90,9 +95,18 @@
     <script src="../padrao-esplee/jquery-3.6.0.js"></script>
     <script>
         $(document).ready(function(){
-            $('#nav-menu-ico, .cancel, .background').click(function(){
-                $('.content').toggleClass('hide');
-                $('.background').fadeToggle();
+            $('#nav-menu-ico, .background').click(function(){
+                let img = document.querySelector('#img-cancel');
+                $('.content').toggleClass('show');
+                $('.background').fadeToggle(1000);
+
+                if($('.content').hasClass('show') == true){
+                    $('.links a').fadeToggle(900);
+                    img.src = '../imagens/icon/light-cancel.svg'
+                }else{
+                    $('.links a').fadeToggle(400);
+                    img.src = '../imagens/icon/light-menu.svg'
+                }
             })
         })
     </script>
