@@ -49,9 +49,9 @@ header{
                 transition: .4s;
                 transform: translateY(12px);}
 section#pt1 div.triang.top{
-    border-bottom: 50px solid var(--light1-color);}
+    border-bottom: 32px solid var(--light1-color);}
 section#pt1 div.triang.bottom{
-    border-top: 50px solid var(--light1-color);}
+    border-top: 32px solid var(--light1-color);}
 section#pt1 div.content{
     display: flex;
     flex-direction: row;
@@ -221,3 +221,8 @@ section#pt6{
 section#pt7{
     background-color: var(--dark0-color);
     color: var(--light1-color);}
+
+@media only screen and (min-width: 992px){
+    section#pt1 div.triang.top{
+        border-bottom: 50px solid var(--light1-color);}
+}

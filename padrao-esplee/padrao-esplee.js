@@ -28,5 +28,20 @@ $(document).ready(function(){
                 fadeScroll();
             })
             */
-        
+
+           /*NAVBAR PARA MOBILE*/
+            $('#nav-menu-ico, .background').click(function(){
+                let img = document.querySelector('#img-cancel');
+                $('.navbar').toggleClass('show');
+                $('.background').fadeToggle(1000);
+                $('#nav-menu-ico').toggleClass('icon-fixed')
+
+                if($('.navbar').hasClass('show') == true){
+                    $('.links a').fadeToggle(900);
+                    img.src = '../../imagens/icon/light-cancel.svg'
+                }else{
+                    $('.links a').fadeToggle(400);
+                    img.src = '../../imagens/icon/light-menu.svg'
+                }
+            })
 })
