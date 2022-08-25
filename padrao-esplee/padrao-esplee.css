@@ -129,13 +129,13 @@ header{
         margin-bottom: 96px;}
         .nav-ico{
             transition: .4s;
-            width: 44px;
+            width: 40px;
             position: relative;}
             .nav-ico:hover{
                 transition: .4s;
                 transform: scale(1.05);}
         #nav-menu-ico{
-            width: 44px;
+            width: 40px;
             display: block;}
             .icon-fixed{
                 position: fixed;
