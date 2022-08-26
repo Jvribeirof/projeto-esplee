@@ -20,17 +20,15 @@ $(document).scroll(function(){
 })
 
 /*NAVBAR PARA MOBILE*/
-$('#nav-menu-ico, .background').click(function(){
+$('#nav-menu-ico, .background, .navbar-icon').click(function(){
     let img = document.querySelector('#img-cancel');
     $('.navbar').toggleClass('show');
     $('.background').fadeToggle(1000);
     $('#nav-menu-ico').toggleClass('icon-fixed')
 
     if($('.navbar').hasClass('show') == true){
-        $('.links a').fadeToggle(900);
-        img.src = 'imagens/light-cancel.svg'
+        $('.links a, #nav-menu-ico').fadeToggle(900);
     }else{
-        $('.links a').fadeToggle(400);
-        img.src = 'imagens/light-menu.svg'
+        $('.links a, #nav-menu-ico').fadeToggle(400);
     }
 })

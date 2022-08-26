@@ -21,11 +21,6 @@ header{
     background-image: url();}
     #header-content{
         height: 440px;}
-        header div.nav{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding-top: 32px;}
         header div.icon{
             width: 40px;}
             header div.icon:hover{

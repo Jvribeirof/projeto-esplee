@@ -146,8 +146,6 @@ header{
             position: relative;}
 
 /*CONFIGURAÇÃO DE NAVBAR*/
-#nav-menu-ico{
-    z-index: 11;}
 .navbar{
     z-index: 10;
     transition: 1s;
@@ -158,10 +156,15 @@ header{
 
     opacity: 0;
     width: 0px;
-    padding: 120px 0px 0px 0px;
+    padding: 48px 0px 0px 0px;
 
     height: 100%;
     background-color: var(--dark0-color);}
+    .navbar-icon{
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 32px;
+    }
 .background{
     z-index: 10;
     display: none;
@@ -173,6 +176,7 @@ header{
     height: 100%;
     background-color: var(--dark0-color);
     opacity: 0.5;}
+
 .links{
     display: flex;
     flex-direction: column;
@@ -186,7 +190,7 @@ header{
 .show{
     transition: 1s;
     opacity: 1;
-    padding: 120px 0px 0px 30px;
+    padding: 48px 0px 0px 30px;
     width: 60vw;}
 
 /*CONFIGURAÇÃO DA SECTION*/
