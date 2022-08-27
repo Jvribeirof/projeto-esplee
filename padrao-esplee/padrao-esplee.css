@@ -202,6 +202,27 @@ section{
         max-width: 1400px;
         padding: 0px 32px;
         margin: 76px auto;}
+
+/*CONFIGURAÇÃO DO FOOTER*/
+footer{
+    display: flex;
+    justify-content: space-between;
+
+    padding: 24px 32px;
+    border-top: 1px solid var(--dark0-color);
+}
+    footer .logo-footer{
+        width: 144px;
+    }
+        .nav-footer{
+            display: flex;
+            gap: 12px;
+        } 
+            .icon-footer{
+                width: 48px;
+                border-radius: 50%;
+                border: 1px solid var(--dark0-color);
+            } 
         
 /*ACCORDIONS*/
 div.accordion{
@@ -290,6 +311,10 @@ div.accordion{
         display: none;}  
         button{
             width: 50%;}
+    .triang.top {
+        border-bottom: 50px solid var(--light1-color);
+        top: -50px;
+    }
     }
 @media only screen and (min-width: 992px){
     button{
@@ -297,6 +322,10 @@ div.accordion{
     }
     .nav-icon{
         width: 48px;
+    }
+    .triang.top {
+        border-bottom: 80px solid var(--light1-color);
+        top: -80px;
     }
 }
 /*@media only screen and (max-width: 1000px){

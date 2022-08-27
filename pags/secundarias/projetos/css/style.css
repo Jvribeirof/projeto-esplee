@@ -86,7 +86,7 @@ nav{
         display: flex;
         flex-direction: column;}
         div.galery picture, div.galery img{
-            margin-bottom: -1%;
+            margin-bottom: -2px;
             width: 100%;}
         div.galery div.social{
             display: flex;
@@ -102,9 +102,20 @@ nav{
         }
             .js-pic{
                 opacity: 0;}
-#cta div.content{
-    text-align: center;
+section #cta{
+    height: 1400px;
 }
+    #cta div.content{
+        text-align: center;
+    }
+        #cta div.content h2{
+            font-size: 1.777em;
+            font-weight: 500;
+            margin-bottom: 0.5em;
+        }
+        #cta div.content p{
+            text-align: center;
+        }
 @media screen and (min-width: 600px){
     header div.icon{
         width: 48px;

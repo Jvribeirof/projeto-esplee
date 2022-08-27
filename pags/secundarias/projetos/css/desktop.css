@@ -5,6 +5,7 @@ header{
         header div.nav{
             padding-top: 48px;
         }
+
 section div.content{
     width: 1200px;}
 #flex{
@@ -16,7 +17,7 @@ section div.content{
     #div2{
         flex: 50%;}
 section.galery{
-    padding-bottom: 40px;
+    padding-bottom: 140px;
 }
 div.galery{
     width: 80%;
@@ -27,3 +28,6 @@ div.galery{
         gap: 24px;}
         div.galery div.social{
             padding: 0px;}
+#cta div.content{
+    margin-top: 128px;
+}
