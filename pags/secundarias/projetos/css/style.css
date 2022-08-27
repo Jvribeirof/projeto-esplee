@@ -40,6 +40,9 @@ main div.content{
     div.headings{
         margin: 0px 0px 24px 0px;}
     div.tags{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
         margin-bottom: 32px;}
         div.tag{
             display: inline-block;
