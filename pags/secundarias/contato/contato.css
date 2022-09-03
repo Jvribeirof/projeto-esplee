@@ -18,9 +18,8 @@
     --light0-color:#F8F0FF;
     --light1-color:#FBF7FF;
 }
-
 header{
-    background-image: url(../../imagens/background/bg-cover-g.jpg)
+    background-image: url(imagens/bg-cover-g.jpg)
 }
     #nav2{
         display: flex;
@@ -67,7 +66,6 @@ header{
         #seta > img{
             width: 48px;
         }
-
 
 main{
     display: flex;
