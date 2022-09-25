@@ -218,6 +218,7 @@ footer{
         } 
             .icon-footer{
                 width: 48px;
+                height: 48px;
                 border-radius: 50%;
                 border: 1px solid var(--dark0-color);
             } 
