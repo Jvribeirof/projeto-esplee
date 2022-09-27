@@ -5,11 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Estilo Pai-->
     <link rel="stylesheet" href="../../padrao-esplee/padrao-esplee.css">
-    
-    <!-- Estilo Filho-->
-    <link rel="stylesheet" href="index.css">
+
+    <!--Padrão Mobile-->
+    <link rel="stylesheet" href="css/mobile.css" media="all">
+
+    <!--Versão Tablet-->
+    <link rel="stylesheet" href="css/tablet.css" media="screen and (min-width: 640px)">
+
+    <!--Versão Desktop-->
+    <link rel="stylesheet" href="css/desktop.css" media="screen and (min-width: 1280px)">
 
     <title>Home</title>
 </head>
@@ -18,43 +23,50 @@
         <div id="header-content">
             <nav>
                 <div class="nav-ico" id="nav-ico-logo">
-                    <a href="index.html"><img src="../../imagens/logos/SVG/Simbolo.svg" alt="nav-logo"></a>
+                    <a href="index.html"><img src="imagens/simbolo.svg" alt="nav-logo"></a>
                 </div>
                 <div id="nav-links">
                     <a href="#">Na Rota</a>
-                    <a href="#">Projeto</a>
+                    <a href="../projetos.html">Projeto</a>
                     <a href="#">Sobre Nós</a>
-                    <a href="../secundarias/contato/contato.html">Contato</a>
+                    <a href="../../contato/contato.html">Contato</a>
                 </div>
                 <div class="nav-ico" id="nav-menu-ico">
-                    <a href="#"><img id="img-cancel" src="../../imagens/icon/light-menu.svg" alt="menu-ico"></a>
+                    <a href="#"><img id="img-cancel" src="imagens/light-menu.svg" alt="menu-ico"></a>
                 </div>
                 <div class="background"></div>
                 <div class="navbar">
+                    <div class="navbar-icon">
+                        <div class="nav-ico">
+                            <img src="imagens/light-cancel.svg" alt="">
+                        </div>
+                    </div>
                     <div class="links">
                         <a href="#">Na Rota</a>
-                        <a href="#">Projeto</a>
+                        <a href="../projetos.html">Projeto</a>
                         <a href="#">Sobre Nós</a>
-                        <a href="#">Contato</a>
+                        <a href="../../contato/contato.html">Contato</a>
                     </div>
                 </div>
             </nav>
-            <div id="header-headings">
-                <h1><strong>Explore</strong> o poder da sua <strong>marca</strong></h1>
-                <p>Todos tem uma história que precisa ser contada</p>
-            </div>
-            <a href="../secundarias/contato/contato.html">
-                <button class="primario">Começar projeto</button>
-            </a>
-            <div id="seta">
-                <img src="../../imagens/icon/light-arrow-down.svg" alt="seta-baixo">
+            <div class="js-fade">
+                <div id="header-headings">
+                    <h1><strong>Explore</strong> o poder da sua <strong>marca</strong></h1>
+                    <h5>Todos tem uma história que precisa ser contada</h5>
+                </div>
+                <a href="../secundarias/contato/contato.html">
+                    <button class="primario">Começar projeto</button>
+                </a>
+                <div id="seta">
+                    <img src="../../imagens/icon/light-arrow-down.svg" alt="seta-baixo">
+                </div>
             </div>
         </div>
     </header>
     <section id="pt1">
         <div class="triang top right"></div>
         <div class="triang top left"></div>
-        <div class="content">
+        <div class="content js-fade">
             <div class="left">
                 <div class="tag">
                     <h2>A chance do século</h2>
@@ -81,7 +93,7 @@
         <div class="triang bottom left"></div>
     </section>
     <section id="pt2">
-        <div class="content">
+        <div class="content js-fade">
             <h2>Se diferenciar, é ter uma marca forte no digital</h2>
             <div class="cases">
                 <a href="#">
@@ -143,7 +155,6 @@
             </div>
             <h3>Esse é o nosso jeito de fazer, o Esplee Style!</h3>
             <p>Esplee é um estúdio focado em explorar a autenticidade de cada empresa com o objetivo de projetar a identidade visual junto à uma estratégia de branding para principalmente empresas que são focadas no digital.</p>
-            <img src="#" alt="simbolo-verde">
         </div>
         <div class="triang bottom right"></div>
         <div class="triang bottom left"></div>
@@ -168,9 +179,7 @@
     </section>
     <footer></footer>
     <script src="../../padrao-esplee/jquery-3.6.0.js"></script>
-
     <script src="../../padrao-esplee/padrao-esplee.js"></script>
-
     <script src="index.js"></script>
 </body>
 </html>

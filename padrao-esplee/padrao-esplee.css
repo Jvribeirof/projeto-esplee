@@ -290,6 +290,13 @@ div.accordion{
     100%{
         transform: translateX(-4px);
     }}
+@keyframes updown {
+    0%{
+        transform: translateY(5px);
+    }
+    100%{
+        transform: translateY(-10px);
+    }}
 
 
 /*MEDIA QUERIES*/
