@@ -100,6 +100,39 @@ section div.tag h2{
     #pt2 .bottom{
         border-top: 32px solid var(--dark0-color);
     }
+#pt3 .help{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.help p{
+    font-weight: 500;
+    margin: 0px;
+}
+.help img{
+    width: 24px;
+}
+#pt3 .itens{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 48px;
+}
+    #pt3 .item{
+        background-color: var(--light0-color);
+        width: 56px;
+        height: 56px;
+        transform: rotate(45deg);
+    }
+        #pt3 .item:hover{
+            background-color: var(--light-1-color);
+        }
+            #pt3 .item p{
+                font-weight: 600;
+                transform: rotate(-45deg);
+                position: absolute;
+                top: 30%;
+                left: 30%;
+            }
 
 #pt4{
     background-color: var(--red0-color);

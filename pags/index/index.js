@@ -18,3 +18,19 @@ $(document).scroll(function(){
         fadeScroll($(this));
     })
 })
+
+$('.n2, .n3, .n4, .n5').hide();
+let qnt = $('#pt3 .item') 
+for(let i = 1; i<=qnt.length;i++){
+    $('#pt3 .item').eq(i-1).on({
+        mouseenter:function(){
+            $('.passo').hide();
+            $('.n'+(i)).fadeIn();
+        }
+    })
+}
+/*$('#pt3 .item').eq(2).hover(function(){
+    $('.passo').hide();
+    $('.n3').fadeIn();
+
+})*/
