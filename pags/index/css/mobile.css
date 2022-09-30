@@ -4,7 +4,7 @@ header{
 }
 #header-headings{
     text-align: center;}
-#header-headings strong{
+#header-headings strong, #pt5 strong{
     font-size: 1em;
     font-weight: 500;
     font-family: 'espleetype', sans-serif;
@@ -140,4 +140,23 @@ section div.tag h2{
 }
 #pt4 .bottom{
     border-top: 32px solid var(--red0-color);
+}
+
+#pt5{
+    text-align: center;
+    padding: 80px 0px;
+}
+
+#pt6 .top {
+    border-bottom: 32px solid var(--dark0-color);
+}
+
+#pt6, #pt7{
+    background-color: var(--dark0-color);
+    color: var(--light1-color);
+}
+#pt6 h2, #pt7 h2{
+    font-size: 2.369em;
+    font-weight: 500;
+    margin-bottom: 0.5em;
 }
