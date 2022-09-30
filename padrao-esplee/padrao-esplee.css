@@ -230,7 +230,7 @@ div.accordion{
     
     background-color: var(--dark-2-color);
     margin: auto;
-    width: 100%;}
+    width: 380px;}
     div.accordion div.header button{
         display: flex;
         justify-content: space-between;
