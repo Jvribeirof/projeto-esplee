@@ -1,6 +1,6 @@
 /*CONFIGS DO HEADER*/
 header{
-    background-image: url(../imagens/);
+    background-image: url(../assets/background/bg-p.jpg);
 }
 #header-headings{
     text-align: center;}
@@ -145,6 +145,8 @@ section div.tag h2{
 #pt5{
     text-align: center;
     padding: 80px 0px;
+    background-image: url(../assets/background/bg2-p.jpg);
+    color: var(--light1-color);
 }
 
 #pt6 .top {
