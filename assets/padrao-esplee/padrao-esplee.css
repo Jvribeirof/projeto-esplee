@@ -327,7 +327,8 @@ div.accordion{
     #nav-menu-ico{
         display: none;}  
         button{
-            width: 50%;}
+            width: 50vw;
+            text-align: center;}
     .triang.top {
         border-bottom: 50px solid var(--light1-color);
         top: -50px;
