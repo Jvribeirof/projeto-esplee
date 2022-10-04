@@ -218,7 +218,13 @@ footer{
                 width: 48px;
                 height: 48px;
                 border-radius: 50%;
-                border: 1px solid var(--dark0-color);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            } 
+            .icon-footer img{
+                width: 28px;
+                height: 28px;
             } 
         
 /*ACCORDIONS*/
