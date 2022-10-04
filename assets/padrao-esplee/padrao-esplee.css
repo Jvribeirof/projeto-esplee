@@ -27,7 +27,7 @@
     box-sizing: border-box;
     font-size: 18px;
     font-family: 'Roboto',sans-serif;}
-    
+
 body, html{
     width: 100%;}
 
@@ -243,9 +243,11 @@ div.accordion{
 
         background-color: var(--dark-1-color);
         color: var(--light1-color);}
-    div.accordion div.header img{
-        transition: .3s;
-        width: 32px;}
+            div.accordion div.header span{
+                text-align: left;}
+            div.accordion div.header img{
+                transition: .3s;
+                width: 32px;}
     div.accordion div.content-ac{
         width: 100%;}
     div.accordion div.content-ac p{
