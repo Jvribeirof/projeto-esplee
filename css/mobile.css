@@ -78,9 +78,21 @@ section div.tag h2{
         }
             #pt2 .case{
                 background-color: var(--dark-2-color);
+                background-position: center center;
+                background-size: cover;
                 width: 100%;
                 height: 360px;
                 position: relative;
+            }
+
+            #case1{
+                background-image: url(../assets/background/app-p.jpg);
+            }
+            #case2{
+                background-image: url(../assets/background/controle-p.jpg);
+            }
+            #case3{
+                background-image: url(../assets/background/tango-p.jpg);
             }
                 #pt2 .mais-info{
                     position: absolute;
@@ -91,6 +103,7 @@ section div.tag h2{
                     #pt2 img{
                         width: 48px;
                         background-color: var(--green-1-color);
+                        box-shadow: -4px 4px var(--dark0-color);
                         padding: 12px 4px;
                         border-radius: 4px;
                     }
