@@ -27,6 +27,7 @@
     box-sizing: border-box;
     font-size: 18px;
     font-family: 'Roboto',sans-serif;}
+    
 body, html{
     width: 100%;}
 
@@ -219,13 +220,18 @@ footer{
             } 
         
 /*ACCORDIONS*/
+div.accordions{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
 div.accordion{
     display: flex;
     flex-direction: column;
     
-    background-color: var(--dark-2-color);
+    background-color: var(--dark0-color);
     margin: auto;
-    width: 380px;}
+    width: 100%;}
     div.accordion div.header button{
         display: flex;
         justify-content: space-between;
