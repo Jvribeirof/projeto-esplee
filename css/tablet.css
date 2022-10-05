@@ -1,0 +1,13 @@
+.right .item{
+    flex-direction: row;
+    justify-content: space-between;
+}
+    .item p{
+        width: 70%;
+    }
+@media screen and (min-width:800px){
+.content, .accordions{
+    margin: auto;
+    width: 660px;
+}
+}
