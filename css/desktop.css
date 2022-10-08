@@ -1,0 +1,12 @@
+#pt1 .content{
+    flex-direction: row;
+}
+    #pt1 .right{
+        width: 50%;
+    }
+    #pt1 .left{
+        width: 50%;
+    }
+.content{
+    width: 1000px;
+}
