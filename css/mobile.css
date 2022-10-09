@@ -30,8 +30,14 @@ header{
 .align{
     text-align: center;
 }
+.aux{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 
-#header-headings h5{
+#header-headings p{
+    font-size: 1.333em;
     font-weight: 400;
     margin-bottom: 100px;}
 #seta {
@@ -192,4 +198,10 @@ section div.tag h2{
 footer{
     background-color: var(--dark0-color);
     color: var(--light1-color);
+}
+@media screen and (min-width:550px) {
+    #pt3 .itens{
+        justify-content: left;
+        gap: 40px;
+    }
 }
