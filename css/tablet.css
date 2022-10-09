@@ -1,3 +1,20 @@
+/*IMAGENS*/
+header{
+    background-image: url(../assets/background/bg-m.jpg);
+}
+#case1{
+    background-image: url(../assets/background/app-m.jpg);
+}
+#case2{
+    background-image: url(../assets/background/controle-m.jpg);
+}
+#case3{
+    background-image: url(../assets/background/tango-m.jpg);
+}
+#pt5{
+    background-image: url(../assets/background/bg2-m.jpg);
+}
+
 .right .item{
     flex-direction: row;
     justify-content: space-between;
@@ -5,9 +22,32 @@
     .item p{
         width: 70%;
     }
-@media screen and (min-width:800px){
-.content, .accordions{
-    margin: auto;
-    width: 660px;
+
+#pt3 .item p{
+    top: 17%;
+    left: 25%;
 }
+/*TRIANGULOS*/
+#pt2 .bottom{
+    border-top: 50px solid var(--dark0-color);
+}
+#pt4 .bottom{
+    border-top: 50px solid var(--red0-color);
+}
+@media screen and (min-width:800px){
+    .content, .accordions{
+        margin: auto;
+        width: 660px;
+    }
+    #pt2 .content {
+        width: 80%;
+    }
+    #pt2 .case {
+        height: 40vw;
+    }
+    .align {
+        text-align: center;
+        margin: auto;
+        width: 800px;
+    }
 }

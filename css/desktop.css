@@ -1,12 +1,42 @@
+/*IMAGENS*/
+header{
+    background-image: url(../assets/background/bg-g.jpg);
+}
+#case1{
+    background-image: url(../assets/background/app-g.jpg);
+}
+#case2{
+    background-image: url(../assets/background/controle-g.jpg);
+}
+#case3{
+    background-image: url(../assets/background/tango-g.jpg);
+}
+#pt5{
+    background-image: url(../assets/background/bg2-g.jpg);
+}
+
+header h1, #pt5 h1{
+    font-size: 5.6em;
+}
 #pt1 .content{
     flex-direction: row;
+    width:1200px;
 }
+    #pt1 section div.content {
+        gap: 90px;
+    }
     #pt1 .right{
         width: 50%;
     }
     #pt1 .left{
         width: 50%;
     }
-.content{
-    width: 1000px;
+    section div.content{
+        max-width: 1400px;
+        padding: 80px 32px;
+        margin: 76px auto;}
+
+#pt3 .item p{
+    top: 18%;
+    left: 20%;
 }

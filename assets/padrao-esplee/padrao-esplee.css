@@ -312,6 +312,16 @@ div.accordion{
 
 
 /*MEDIA QUERIES*/
+
+@media only screen and (min-width: 640px){
+    /*BORDAS TRIÂNGULARES*/
+    .triang.top{
+        border-bottom: 50px solid var(--light1-color);
+        top: -50px;}
+    .triang.bottom{
+        border-top: 50px solid var(--light1-color);
+        bottom: -50px;}
+}
 @media only screen and (min-width: 768px){
     *{
         font-size: 21px;}   

@@ -1,7 +1,20 @@
-/*CONFIGS DO HEADER*/
+/*IMAGENS*/
 header{
     background-image: url(../assets/background/bg-p.jpg);
 }
+#case1{
+    background-image: url(../assets/background/app-p.jpg);
+}
+#case2{
+    background-image: url(../assets/background/controle-p.jpg);
+}
+#case3{
+    background-image: url(../assets/background/tango-p.jpg);
+}
+#pt5{
+    background-image: url(../assets/background/bg2-p.jpg);
+}
+/*CONFIGS DO HEADER*/
 #header-headings{
     text-align: center;}
 #header-headings strong, #pt5 strong{
@@ -88,16 +101,6 @@ section div.tag h2{
                 height: 360px;
                 position: relative;
             }
-
-            #case1{
-                background-image: url(../assets/background/app-p.jpg);
-            }
-            #case2{
-                background-image: url(../assets/background/controle-p.jpg);
-            }
-            #case3{
-                background-image: url(../assets/background/tango-p.jpg);
-            }
                 #pt2 .mais-info{
                     position: absolute;
                     right: 0px;
@@ -161,9 +164,12 @@ section div.tag h2{
 
 #pt5{
     text-align: center;
-    padding: 80px 0px;
-    background-image: url(../assets/background/bg2-p.jpg);
+    padding: 80px 0px 60px 0px;
     color: var(--light1-color);
+}
+
+#pt5 div.content {
+    padding: 64px 32px 0px 32px;
 }
 
 #pt6 .top {
