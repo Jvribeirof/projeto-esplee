@@ -1,19 +1,15 @@
 /*IMAGENS*/
 header{
-    background-image: url(../assets/background/bg-p.jpg);
-}
+    background-image: url(../assets/background/bg-p.jpg);}
 #case1{
-    background-image: url(../assets/background/app-p.jpg);
-}
+    background-image: url(../assets/background/app-p.jpg);}
 #case2{
-    background-image: url(../assets/background/controle-p.jpg);
-}
+    background-image: url(../assets/background/controle-p.jpg);}
 #case3{
-    background-image: url(../assets/background/tango-p.jpg);
-}
+    background-image: url(../assets/background/tango-p.jpg);}
 #pt5{
-    background-image: url(../assets/background/bg2-p.jpg);
-}
+    background-image: url(../assets/background/bg2-p.jpg);}
+
 /*CONFIGS DO HEADER*/
 #header-headings{
     text-align: center;}
@@ -32,18 +28,19 @@ header{
             display: flex;
             flex-direction: column;
             gap: 20px;}
-
-#header-headings p{
-    font-size: 1.333em;
-    font-weight: 400;
-    margin-bottom: 100px;}
-#seta {
+    #header-headings p{
+        font-size: 1.333em;
+        font-weight: 400;
+        margin-bottom: 100px;}
+#seta{
     padding: 80px;
     display: flex;
     justify-content: center;}
     #seta img{
         width: 48px;
         animation: updown .8s infinite alternate;}
+
+/*CONFIGS DE SECTION*/
 section div.tag h2{
     font-size: 1em;
     background-color: var(--green0-color);
@@ -54,34 +51,39 @@ section div.tag h2{
     section div.content{
         display: flex;
         flex-direction: column;
-        gap: 20px;
-    }
-    section div.content .right{
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-    }
-        .right .item{
-            display: flex;
-            flex-direction: column;
+        gap: 20px;}
 
-            background-color: var(--light0-color);
-            padding: 20px 32px;
-            border-radius: 4px;
-            box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.104);
-        }
-            .item .num{
-                color: var(--green0-color);
-                font-family: 'esplee-font', sans-serif;
-                font-size: 4.4em;
-                margin-bottom: 0em;
-                line-height: 0.95em;
-            }
-            .item p{
-                margin-bottom: 0em;}
-
+/*TRIANGULOS*/
 #pt2 .bottom{
     border-top: 32px solid var(--dark0-color);}
+#pt4 .bottom{
+    border-top: 32px solid var(--red0-color);}
+#pt6 .top {
+    border-bottom: 32px solid var(--dark0-color);}
+
+/*SECTION 1*/
+#pt1 .right{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;}
+    #pt1 .right .item{
+        display: flex;
+        flex-direction: column;
+
+        background-color: var(--light0-color);
+        padding: 20px 32px;
+        border-radius: 4px;
+        box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.104);}
+        #pt1 .item .num{
+            color: var(--green0-color);
+            font-family: 'esplee-font', sans-serif;
+            font-size: 4.4em;
+            margin-bottom: 0em;
+            line-height: 0.95em;}
+        #pt1 .item p{
+            margin-bottom: 0em;}
+
+/*SECTION 2*/
 #pt2{
     background-color: var(--dark0-color);
     color: var(--light1-color);
@@ -116,15 +118,16 @@ section div.tag h2{
                         #pt2 img:hover{
                             animation: seta 1s infinite alternate-reverse;}
 
+/*SECTION 3*/
 #pt3 .help{
     display: flex;
     align-items: center;
     gap: 8px;}
-.help p{
-    font-weight: 500;
-    margin: 0px;}
-.help img{
-    width: 24px;}
+    .help p{
+        font-weight: 500;
+        margin: 0px;}
+    .help img{
+        width: 24px;}
 #pt3 .itens{
     display: flex;
     justify-content: space-between;
@@ -143,21 +146,20 @@ section div.tag h2{
             top: 30%;
             left: 30%;}
 
-#pt4 .bottom{
-    border-top: 32px solid var(--red0-color);}
+/*SECTION 4*/
 #pt4{
     background-color: var(--red0-color);
     color: var(--light1-color);}
 
+/*SECTION 5*/
 #pt5{
     text-align: center;
     padding: 80px 0px 60px 0px;
     color: var(--light1-color);}
     #pt5 div.content {
         padding: 64px 32px 0px 32px;}
-        
-#pt6 .top {
-    border-bottom: 32px solid var(--dark0-color);}
+
+/*SECTION 6*/
 #pt6{
     background-color: var(--dark0-color);
     color: var(--light1-color);}
@@ -168,10 +170,12 @@ section div.tag h2{
         font-weight: 500;
         margin-bottom: 0.6em;
         text-align: center;}
+
+/*FOOTER*/
 footer{
     background-color: var(--dark0-color);
-    color: var(--light1-color);
-}
+    color: var(--light1-color);}
+
 @media screen and (min-width:550px) {
     #pt3 .itens{
         justify-content: left;

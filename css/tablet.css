@@ -1,64 +1,51 @@
 /*IMAGENS*/
 header{
-    background-image: url(../assets/background/bg-m.jpg);
-}
+    background-image: url(../assets/background/bg-m.jpg);}
 #case1{
-    background-image: url(../assets/background/app-m.jpg);
-}
+    background-image: url(../assets/background/app-m.jpg);}
 #case2{
-    background-image: url(../assets/background/controle-m.jpg);
-}
+    background-image: url(../assets/background/controle-m.jpg);}
 #case3{
-    background-image: url(../assets/background/tango-m.jpg);
-}
+    background-image: url(../assets/background/tango-m.jpg);}
 #pt5{
-    background-image: url(../assets/background/bg2-m.jpg);
-}
+    background-image: url(../assets/background/bg2-m.jpg);}
 
-.right .item{
+/*SECTION 1*/
+#pt1 .right .item{
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-}
-    .item p{
-        width: 70%;
-    }
+    align-items: center;}
+    #pt1 .item p{
+        width: 70%;}
 
+/*SECTION 3*/
 #pt3 .item p{
     top: 17%;
-    left: 25%;
-}
+    left: 25%;}
 
 /*MARGENS*/
 #pt2 .content, #pt3 .content, #pt4 .content{
-    margin-top: 120px;
-}
+    margin-top: 120px;}
 /*TRIANGULOS*/
 #pt2 .bottom{
-    border-top: 50px solid var(--dark0-color);
-}
+    border-top: 50px solid var(--dark0-color);}
 #pt4 .bottom{
-    border-top: 50px solid var(--red0-color);
-}
+    border-top: 50px solid var(--red0-color);}
+
 @media screen and (min-width:800px){
     .content {
-        width: 80%;
-    }
+        width: 80%;}
     .align {
         text-align: center;
         margin: auto;
-        width: 800px;
-    }
+        width: 800px;}
     #pt2 .case {
-        height: 40vw;
-    }
+        height: 40vw;}
     .accordions{
         margin: auto;
-        width: 660px;
-    }
+        width: 660px;}
 }
 @media screen and (min-width:1000px) {
     .aux{
-        width: 788px;
-    }
+        width: 788px;}
 }
