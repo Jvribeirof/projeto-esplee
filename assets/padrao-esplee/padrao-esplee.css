@@ -161,6 +161,14 @@ header{
         display: flex;
         justify-content: flex-end;
         padding-right: 32px;}
+    .social-icon{
+        margin-top: 48px;
+        display: flex;
+        gap: 12px;
+    }
+        .social-icon img{
+            width: 24px;
+        }
 .background{
     z-index: 10;
     display: none;
@@ -332,9 +340,14 @@ div.accordion{
             color:var(--light1-color);
             text-decoration: none;
             font-weight: 500;}
-        #nav-links a:hover{
-            transition: .4s;
-            transform: scale(1.05);}     
+            #nav-links a:hover{
+                transition: .4s;
+                transform: scale(1.05);}
+    .social-icon{
+        margin: 0px 0px 0px 32px;
+        gap: 32px;
+    }
+                    
     #nav-menu-ico{
         display: none;}  
         button{
