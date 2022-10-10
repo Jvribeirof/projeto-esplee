@@ -5,8 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="../../../padrao-esplee/padrao-esplee.css">
-    <link rel="stylesheet" href="contato.css">
+    <link rel="stylesheet" href="../../assets/padrao-esplee/font.css">
+    
+    <link rel="stylesheet" href="../../assets/padrao-esplee/padrao-esplee.css">
+    
+    <!--Versão Mobile-->
+    <link rel="stylesheet" href="css/mobile.css" media="all">
+
+    <!--Versão Tablet-->
+    <link rel="stylesheet" href="css/tablet.css" media="screen and (min-width: 640px)">
+
+    <!--Versão Desktop-->
+    <link rel="stylesheet" href="css/desktop.css" media="screen and (min-width: 1280px)">
 
     <title>Contato</title>
 </head>
@@ -15,29 +25,48 @@
         <div id="header-content">
             <nav>
                 <div class="nav-ico" id="nav-ico-logo">
-                    <a href="index.html"><img src="imagens/simbolo.svg" alt="nav-logo"></a>
+                    <a href="index.html"><img src="../../assets/logos/SVG/simbolo.svg" alt="nav-logo"></a>
                 </div>
                 <div id="nav-links">
-                    <a href="#">Na Rota</a>
-                    <a href="#">Projeto</a>
+                    <a href="pags/projetos/projetos.html">Projeto</a>
                     <a href="#">Sobre Nós</a>
-                    <a href="contato.html">Contato</a>
+                    <a href="pags/contato/contato.html">Contato</a>
+                    <div class="social-icon">
+                        <a href="#">
+                            <img src="../../assets/icon/behance-light.png" alt="icon-behance">
+                        </a>
+                        <a href="#">
+                            <img src="../../assets/icon/instagram-light.png" alt="icon-instagram">
+                        </a>
+                    </div>
                 </div>
                 <div class="nav-ico" id="nav-menu-ico">
-                    <a href="#"><img id="img-cancel" src="imagens/light-menu.svg" alt="menu-ico"></a>
+                    <a href="#"><img id="img-cancel" src="../../assets/icon/light-menu.svg" alt="menu-ico"></a>
                 </div>
                 <div class="background"></div>
                 <div class="navbar">
                     <div class="navbar-icon">
                         <div class="nav-ico">
-                            <img src="imagens/light-cancel.svg" alt="">
+                            <img src="../../assets/icon/light-cancel.svg" alt="">
                         </div>
                     </div>
                     <div class="links">
-                        <a href="#">Na Rota</a>
-                        <a href="#">Projeto</a>
+                        <a href="#">Home</a>
+                        <a href="pags/projetos/projetos.html">
+                            Projeto
+                        </a>
                         <a href="#">Sobre Nós</a>
-                        <a href="contato.html">Contato</a>
+                        <a href="pags/contato/contato.html">
+                            Contato
+                        </a>
+                        <div class="social-icon">
+                            <a href="#">
+                                <img src="../../assets/icon/behance-light.png" alt="icon-behance">
+                            </a>
+                            <a href="#">
+                                <img src="../../assets/icon/instagram-light.png" alt="icon-instagram">
+                            </a>
+                        </div>
                     </div>
                 </div>
             </nav>
@@ -55,33 +84,35 @@
             </div>
         </div>
     </header>
-    <main>
-        <div id="contato-content">
-            <h2>Está com algum problema?
-            </h2>
-            <p>Nesse mundo totalmente incerto e complexo se tornou cada vez mais difícil se destacar da maioria. Mas é pra isso que estamos aqui! A Esplee nasceu para ajudar sua empresa no caminho para criar sua relevância nessa era digital através de marcas fortes.</p>
-        </div>
-        <div id="contato-form">
-            <form method="post" autocomplete="off">
-                <div class="form-subtypes" id="form-nome">
-                    <label for="n-email">Email*</label>
-                    <input required type="email" name="n-email" placeholder="Insira seu email">
-                </div>
-
-                <div class="form-subtypes" id="form-email">
-                    <label for="n-nome">Nome*</label>
-                    <input required type="text" name="n-nome" placeholder="Insira seu nome">
-                </div>
-
-                <div class="form-subtypes" id="form-msg">
-                    <label for="n-msg">Descrição*</label>
-                    <input id="inpt-msg" required type="text" name="n-msg" placeholder="Como podemos ajudar?">
-                </div>
-                <button type="submit">Enviar mensagem</button>
-                <p id="atencao">*Essas informações serão usadas apenas para agendarmos uma reunião</p>
-            </form>
-        </div>
-    </main>
+    <div class="aux">
+        <div class="triang bottom right"></div>
+        <div class="triang bottom left"></div>
+        <main>
+            <div id="contato-content">
+                <h2>Está com algum problema?
+                </h2>
+                <p>Nesse mundo totalmente incerto e complexo se tornou cada vez mais difícil se destacar da maioria. Mas é pra isso que estamos aqui! A Esplee nasceu para ajudar sua empresa no caminho para criar sua relevância nessa era digital através de marcas fortes.</p>
+            </div>
+            <div id="contato-form">
+                <form method="post" autocomplete="off">
+                    <div class="form-subtypes" id="form-nome">
+                        <label for="n-email">Email*</label>
+                        <input required type="email" name="n-email" placeholder="Insira seu email">
+                    </div>
+                    <div class="form-subtypes" id="form-email">
+                        <label for="n-nome">Nome*</label>
+                        <input required type="text" name="n-nome" placeholder="Insira seu nome">
+                    </div>
+                    <div class="form-subtypes" id="form-msg">
+                        <label for="n-msg">Descrição*</label>
+                        <input id="inpt-msg" required type="text" name="n-msg" placeholder="Como podemos ajudar?">
+                    </div>
+                    <button type="submit">Enviar mensagem</button>
+                    <p id="atencao">*Essas informações serão usadas apenas para agendarmos uma reunião</p>
+                </form>
+            </div>
+        </main>
+    </div>
     <script src="../../../padrao-esplee/jquery-3.6.0.js"></script>
     <script src="contato.js"></script>
 </body>
