@@ -17,24 +17,21 @@ header{
 /*CONFIGS DO HEADER*/
 #header-headings{
     text-align: center;}
-#header-headings strong, #pt5 strong{
-    font-size: 1em;
-    font-weight: 500;
-    font-family: 'esplee-font';
-    margin-bottom: 0.4em;
-    line-height: 0.95em;
-    color: var(--green-1-color);}
-.js-fade{
-    opacity: 0;
-}
-.align{
-    text-align: center;
-}
-.aux{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
+    #header-headings strong, #pt5 strong{
+        font-size: 1em;
+        font-weight: 500;
+        font-family: 'esplee-font';
+        margin-bottom: 0.4em;
+        line-height: 0.95em;
+        color: var(--green-1-color);}
+        .js-fade{
+            opacity: 0;}
+        .align{
+            text-align: center;}
+        .aux{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;}
 
 #header-headings p{
     font-size: 1.333em;
@@ -82,119 +79,95 @@ section div.tag h2{
             }
             .item p{
                 margin-bottom: 0em;}
+
+#pt2 .bottom{
+    border-top: 32px solid var(--dark0-color);}
 #pt2{
     background-color: var(--dark0-color);
     color: var(--light1-color);
-    text-align: center;
-}
+    text-align: center;}
     #pt2 .content{
-        padding-top: 48px;
-    }
+        padding-top: 48px;}
         #pt2 h2{
-            font-size: 2.369em;
-        }
+            font-size: 2.369em;}
         #pt2 .cases{
             display: flex;
             flex-direction: column;
             gap: 24px;
-            margin-bottom: 48px;
-        }
+            margin-bottom: 48px;}
             #pt2 .case{
                 background-color: var(--dark-2-color);
                 background-position: center center;
                 background-size: cover;
                 width: 100%;
                 height: 360px;
-                position: relative;
-            }
+                position: relative;}
                 #pt2 .mais-info{
                     position: absolute;
                     right: 0px;
                     top: 50%;
-                    transform: translate(30%, -50%);
-                }
+                    transform: translate(30%, -50%);}
                     #pt2 img{
                         width: 48px;
                         background-color: var(--green-1-color);
                         box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.25);
                         padding: 12px 4px;
-                        border-radius: 4px;
-                    }
+                        border-radius: 4px;}
                         #pt2 img:hover{
-                            animation: seta 1s infinite alternate-reverse;
-                        }
-    #pt2 .bottom{
-        border-top: 32px solid var(--dark0-color);
-    }
+                            animation: seta 1s infinite alternate-reverse;}
+
 #pt3 .help{
     display: flex;
     align-items: center;
-    gap: 8px;
-}
+    gap: 8px;}
 .help p{
     font-weight: 500;
-    margin: 0px;
-}
+    margin: 0px;}
 .help img{
-    width: 24px;
-}
+    width: 24px;}
 #pt3 .itens{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 48px;
-}
+    margin-bottom: 48px;}
     #pt3 .item{
         background-color: var(--light0-color);
         width: 56px;
         height: 56px;
-        transform: rotate(45deg);
-    }
+        transform: rotate(45deg);}
         #pt3 .item:hover{
-            background-color: var(--light-1-color);
-        }
-            #pt3 .item p{
-                font-weight: 600;
-                transform: rotate(-45deg);
-                position: absolute;
-                top: 30%;
-                left: 30%;
-            }
+            background-color: var(--light-1-color);}
+        #pt3 .item p{
+            font-weight: 600;
+            transform: rotate(-45deg);
+            position: absolute;
+            top: 30%;
+            left: 30%;}
 
+#pt4 .bottom{
+    border-top: 32px solid var(--red0-color);}
 #pt4{
     background-color: var(--red0-color);
-    color: var(--light1-color);
-}
-#pt4 .bottom{
-    border-top: 32px solid var(--red0-color);
-}
+    color: var(--light1-color);}
 
 #pt5{
     text-align: center;
     padding: 80px 0px 60px 0px;
-    color: var(--light1-color);
-}
-
-#pt5 div.content {
-    padding: 64px 32px 0px 32px;
-}
-
+    color: var(--light1-color);}
+    #pt5 div.content {
+        padding: 64px 32px 0px 32px;}
+        
 #pt6 .top {
-    border-bottom: 32px solid var(--dark0-color);
-}
-
+    border-bottom: 32px solid var(--dark0-color);}
 #pt6{
     background-color: var(--dark0-color);
-    color: var(--light1-color);
-}
+    color: var(--light1-color);}
     #pt6 div.content{
-        width: 100%;
-    }
+        width: 100%;}
     #pt6 h2{
         font-size: 1.777em;
         font-weight: 500;
         margin-bottom: 0.6em;
-        text-align: center;
-    }
+        text-align: center;}
 footer{
     background-color: var(--dark0-color);
     color: var(--light1-color);
