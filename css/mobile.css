@@ -10,6 +10,9 @@ header{
 #pt5{
     background-image: url(../assets/background/bg2-p.jpg);}
 
+.js-fade{
+    opacity: 0;}
+
 /*CONFIGS DO HEADER*/
 #header-headings{
     text-align: center;}
@@ -20,8 +23,6 @@ header{
         margin-bottom: 0.4em;
         line-height: 0.95em;
         color: var(--green-1-color);}
-        .js-fade{
-            opacity: 0;}
         .align{
             text-align: center;}
         .aux{

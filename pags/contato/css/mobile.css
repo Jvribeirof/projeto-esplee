@@ -18,90 +18,72 @@
     --light0-color:#F8F0FF;
     --light1-color:#FBF7FF;
 }
+.js-fade{
+    opacity: 0;}
+
+/*HEADER*/
 header{
-    background-image: url(imagens/bg-cover-g.jpg)
-}
+    background-image: url(../../../assets/background/bg2-p.jpg)}
     #nav2{
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 20px;
-        margin-bottom: 24px;
-    }
+        margin-bottom: 24px;}
         #nav2 > img{
-            width: 24px;
-        }
-
+            width: 24px;}
         #nav2 > a{
             transition: .4s;
             text-decoration: none;
             color: var(--light-1-color);
             font-weight: 400;
-
-            position: relative;
-        }
+            position: relative;}
             #nav2 > a:hover{
                 transition: .4s;
                 color: var(--light1-color);
-                transform: scale(1.03);
-            }
+                transform: scale(1.03);}
     #contato-header-heading > h1{
         font-size: 3.157em;
         font-weight: 500;
         font-family: 'roboto', sans-serif;
         text-align: center;
-        margin-bottom: 40px;
-    }
+        margin-bottom: 40px;}
     #contato-header-heading > p{
         text-indent: 0px;
         text-align: center;
         font-weight: 400;
-        margin-bottom: 96px;
-    }
+        margin-bottom: 96px;}
     #seta{
         display: flex;
         justify-content: center;
-        padding-bottom: 140px;
-    }
+        padding-bottom: 140px;}
         #seta > img{
             width: 48px;
-        }
+            animation: updown .8s infinite alternate;}
 
-.aux{
-    position: relative;
-    width: 100%;
-}
-main{
+/*SECTION 1*/
+section div.content{
     display: flex;
     flex-direction: row;
     gap: 96px;
-
-    max-width: 1200px;
-    padding: 64px 48px 96px 48px;
-    margin: auto;
-}
+    margin-bottom: 24px;}
     #contato-content{
-        width: 50%;
-    }
+        width: 50%;}
     #contato-form{
-        width: 50%;
-    }
+        width: 50%;}
         #contato-form form{
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            gap: 40px;
-        }
+            gap: 40px;}
             .form-subtypes{
                 display: flex;
                 flex-direction: column;
-                width: 100%;
-            }
+                width: 100%;}
                 .form-subtypes > label{
                     color: var(--dark-2-color);
-                    padding: 0px 0px 12px 12px;
-                }
+                    padding: 0px 0px 12px 12px;}
                 .form-subtypes > input{
                     background-color: var(--light0-color);
                     
@@ -109,28 +91,16 @@ main{
                     border-radius: 3px;
                     border: none;
 
-                    position: relative;
-                }
+                    position: relative;}
                     .form-subtypes > input::placeholder{
                         color: var(--light-2-color);
-
-                        position: absolute;
-                    }
+                        position: absolute;}
                     #inpt-msg{
-                        height: 184px;
-                    }
+                        height: 184px;}
             button{
-                background-color: var(--red0-color);
-                color: var(--light1-color);
-                width: 100%;
-            }
-                button:hover{
-                    background-color: var(--red1-color);
-                    color: var(--light0-color);
-                }
+                width: 100%;}
             #atencao{
-                text-align: center;
-            }
+                text-align: center;}
 
                     
 @media only screen and (max-width: 1000px){

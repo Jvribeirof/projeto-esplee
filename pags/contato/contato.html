@@ -12,12 +12,6 @@
     <!--Versão Mobile-->
     <link rel="stylesheet" href="css/mobile.css" media="all">
 
-    <!--Versão Tablet-->
-    <link rel="stylesheet" href="css/tablet.css" media="screen and (min-width: 640px)">
-
-    <!--Versão Desktop-->
-    <link rel="stylesheet" href="css/desktop.css" media="screen and (min-width: 1280px)">
-
     <title>Contato</title>
 </head>
 <body>
@@ -25,69 +19,69 @@
         <div id="header-content">
             <nav>
                 <div class="nav-ico" id="nav-ico-logo">
-                    <a href="index.html"><img src="../../assets/logos/SVG/simbolo.svg" alt="nav-logo"></a>
+                    <a href="../../index.html"><img src="imagens/simbolo.svg" alt="nav-logo"></a>
                 </div>
                 <div id="nav-links">
-                    <a href="pags/projetos/projetos.html">Projeto</a>
+                    <a href="../projetos/projetos.html">Projeto</a>
                     <a href="#">Sobre Nós</a>
-                    <a href="pags/contato/contato.html">Contato</a>
+                    <a href="#">Contato</a>
                     <div class="social-icon">
                         <a href="#">
-                            <img src="../../assets/icon/behance-light.png" alt="icon-behance">
+                            <img src="imagens/behance-dark.png" alt="icon-behance">
                         </a>
                         <a href="#">
-                            <img src="../../assets/icon/instagram-light.png" alt="icon-instagram">
+                            <img src="imagens/instagram-dark.png" alt="icon-instagram">
                         </a>
                     </div>
                 </div>
                 <div class="nav-ico" id="nav-menu-ico">
-                    <a href="#"><img id="img-cancel" src="../../assets/icon/light-menu.svg" alt="menu-ico"></a>
+                    <a href="#"><img id="img-cancel" src="imagens/light-menu.svg" alt="menu-ico"></a>
                 </div>
                 <div class="background"></div>
                 <div class="navbar">
                     <div class="navbar-icon">
                         <div class="nav-ico">
-                            <img src="../../assets/icon/light-cancel.svg" alt="">
+                            <img src="imagens/light-cancel.svg" alt="">
                         </div>
                     </div>
                     <div class="links">
                         <a href="#">Home</a>
-                        <a href="pags/projetos/projetos.html">
+                        <a href="../projetos/projetos.html">
                             Projeto
                         </a>
                         <a href="#">Sobre Nós</a>
-                        <a href="pags/contato/contato.html">
-                            Contato
-                        </a>
+                        <a href="#">Contato</a>
                         <div class="social-icon">
                             <a href="#">
-                                <img src="../../assets/icon/behance-light.png" alt="icon-behance">
+                                <img src="imagens/behance-light.png" alt="icon-behance">
                             </a>
                             <a href="#">
-                                <img src="../../assets/icon/instagram-light.png" alt="icon-instagram">
+                                <img src="imagens/instagram-light.png" alt="icon-instagram">
                             </a>
                         </div>
                     </div>
                 </div>
             </nav>
-            <div id="contato-header-heading">
-                <div id="nav2">
-                    <a href="../../index/index.html">Home</a>
-                    <img src="imagens/light-arrow-right.svg" alt="seta-direita">
-                    <a href="contato.html">Contato</a>
+            <div class="js-fade">
+                <div id="contato-header-heading">
+                    <div id="nav2">
+                        <a href="../../index.html">Home</a>
+                        <img src="imagens/light-arrow-right.svg" alt="seta-direita">
+                        <a href="#">Contato</a>
+                    </div>
+                    <h1>Você está quase lá</h1>
+                    <p>Manda um oi pra agendarmos uma reunião</p>
                 </div>
-                <h1>Você está quase lá</h1>
-                <p>Manda um oi pra agendarmos uma reunião</p>
-            </div>
-            <div id="seta">
-                <img src="imagens/light-arrow-down.svg" alt="seta-baixo">
+                <div id="seta">
+                    <img src="imagens/light-arrow-down.svg" alt="seta-baixo">
+                </div>
             </div>
         </div>
     </header>
-    <div class="aux">
-        <div class="triang bottom right"></div>
-        <div class="triang bottom left"></div>
-        <main>
+    <section>
+        <div class="triang top right"></div>
+        <div class="triang top left"></div>
+        <div class="content js-fade">
             <div id="contato-content">
                 <h2>Está com algum problema?
                 </h2>
@@ -107,13 +101,25 @@
                         <label for="n-msg">Descrição*</label>
                         <input id="inpt-msg" required type="text" name="n-msg" placeholder="Como podemos ajudar?">
                     </div>
-                    <button type="submit">Enviar mensagem</button>
+                    <button type="submit" class="primario">Enviar mensagem</button>
                     <p id="atencao">*Essas informações serão usadas apenas para agendarmos uma reunião</p>
                 </form>
             </div>
-        </main>
-    </div>
-    <script src="../../../padrao-esplee/jquery-3.6.0.js"></script>
+        </div>
+    </section>
+    <footer>
+        <img class="logo-footer" src="imagens/dark-principal.svg" alt="logo-footer">
+        <div class="nav-footer">
+            <a href="#">
+                <div class="icon-footer"><img src="imagens/instagram-dark.png" alt="icon-instagram"></div>
+            </a>
+            <a href="#">
+                <div class="icon-footer"><img src="imagens/behance-dark.png" alt="icon-behance"></div>
+            </a>
+        </div>
+    </footer>
+    <script src="../../assets/padrao-esplee/jquery-3.6.0.js"></script>
+    <script src="../../assets/padrao-esplee/padrao-esplee.js"></script>
     <script src="contato.js"></script>
 </body>
 </html>

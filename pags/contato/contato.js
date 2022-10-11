@@ -7,16 +7,14 @@ function fadeScroll(select){
         select.addClass('fade')}
 }
 
-/*NAVBAR PARA MOBILE*/
-$('#nav-menu-ico, .background, .navbar-icon').click(function(){
-    let img = document.querySelector('#img-cancel');
-    $('.navbar').toggleClass('show');
-    $('.background').fadeToggle(1000);
-    $('#nav-menu-ico').toggleClass('icon-fixed')
+//RODA AO DER RE-LOAD NA PÁGINA
+$('.js-fade').each(function(){
+    fadeScroll($(this));
+})
 
-    if($('.navbar').hasClass('show') == true){
-        $('.links a, #nav-menu-ico').fadeToggle(900);
-    }else{
-        $('.links a, #nav-menu-ico').fadeToggle(400);
-    }
+//RODA AO SCROLLAR A PÁGINA
+$(document).scroll(function(){
+    $('.js-fade').each(function(){
+        fadeScroll($(this));
+    })
 })
