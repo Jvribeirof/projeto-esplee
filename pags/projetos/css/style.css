@@ -19,7 +19,7 @@
     --light1-color:#FBF7FF;}
 header{
     background-image: url();}
-    .header-content{
+    #header-content{
         height: 440px;}
         header div.icon{
             width: 40px;}
